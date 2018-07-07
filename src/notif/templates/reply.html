@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Reply </title>
+    <!--/tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+     </script>
+    {% include 'snippets/css.html' %}
+</head>
+
+<body>
+
+     <!-- Header included from snipper -->
+    {% include 'snippets/header-bot.html' %}
+    <!-- //header-bot -->
+    <!-- banner -->
+    <div class="ban-top">
+        <div class="container">
+            <div class="top_nav_left">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            					<span class="sr-only">Toggle navigation</span>
+			            		<span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+            					<span class="icon-bar"></span>
+			        	    </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu__list">
+                                <li class=" menu__item"><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                                <li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="post.html">Post An Item</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="Electronic.html">Electronic</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="Login.html"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
+                                <li class=" manu__item"><a class="menu__link" href="Sign-up.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        {% include 'snippets/shopping-cart.html' %}
+
+        <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="form-Post">
+            <h4 class="white-w3ls">What would you like to exchange it with?</h4>
+            <form action="#" method="post">
+                <div class="row">
+                     {% for n in parts %}
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item1">
+                                <img src="{{ n.images.url }}" alt="" class="pro-image-front">
+
+                                <!--<img src="images/m2.jpg" alt="" class="pro-image-front">-->
+                                <img src="images/m2.jpg" alt="" class="pro-image-back">
+
+                            </div>
+                        </div>
+                        <div class="item-info-product ">
+                            <input type="checkbox" name="image" value="" required>
+                            <h4><a href="single.html">{{ n.name }}</a></h4>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+
+                        </div>
+                        <div class="item-info-product ">
+                            <input type="checkbox" name="image" value="" required>
+                            <h4><a>Exchange for Free</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="styled-input">
+                    <textarea name="Details" required=""></textarea>
+                    <label>Message: </label>
+                </div>
+
+                <div class="styled-input">
+                    <input type="submit" value="Response">
+                </div>
+            </form>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    </div>
+
+           <!-- Footer snippet -->
+    {% include 'snippets/footer.html' %}
+<!-- //login -->
+{% include 'snippets/js-login-signup.html' %}
+</body>
+
+</html>

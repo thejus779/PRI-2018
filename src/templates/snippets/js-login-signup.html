@@ -1,0 +1,162 @@
+    {% load staticfiles %}
+    <!--<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>-->
+    <!--&lt;!&ndash; js &ndash;&gt;-->
+    <!--<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>-->
+    <!--&lt;!&ndash; //js &ndash;&gt;-->
+    <!--&lt;!&ndash; cart-js &ndash;&gt;-->
+    <!--<script src="{% static 'js/minicart.min.js' %}"></script>-->
+    <!--<script>-->
+        <!--// Mini Cart-->
+        <!--paypal.minicart.render({-->
+            <!--action: '#'-->
+        <!--});-->
+
+        <!--if (~window.location.search.indexOf('reset=true')) {-->
+            <!--paypal.minicart.reset();-->
+        <!--}-->
+    <!--</script>-->
+
+    <!--&lt;!&ndash; //cart-js &ndash;&gt;-->
+
+    <!--&lt;!&ndash; stats &ndash;&gt;-->
+    <!--<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>-->
+    <!--<script src="{% static 'js/jquery.countup.js' %}"></script>-->
+    <!--<script src="{% static 'js/jquery.flexslider.js' %}"></script>-->
+    <!--<script>-->
+        <!--$('.counter').countUp();-->
+    <!--</script>-->
+    <!--&lt;!&ndash; //stats &ndash;&gt;-->
+    <!--&lt;!&ndash; start-smoth-scrolling &ndash;&gt;-->
+    <!--<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>-->
+    <!--<script type="text/javascript" src="{% static 'js/jquery.easing.min.js' %}"></script>-->
+    <!--<script type="text/javascript">-->
+        <!--jQuery(document).ready(function($) {-->
+            <!--$(".scroll").click(function(event) {-->
+                <!--event.preventDefault();-->
+                <!--$('html,body').animate({-->
+                    <!--scrollTop: $(this.hash).offset().top-->
+                <!--}, 1000);-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
+    <!--&lt;!&ndash; here stars scrolling icon &ndash;&gt;-->
+    <!--<script type="text/javascript">-->
+        <!--$(document).ready(function() {-->
+            <!--/*-->
+            	<!--var defaults = {-->
+            	<!--containerID: 'toTop', // fading element id-->
+            	<!--containerHoverID: 'toTopHover', // fading element hover id-->
+            	<!--scrollSpeed: 1200,-->
+            	<!--easingType: 'linear' -->
+            	<!--};-->
+            <!--*/-->
+
+            <!--$().UItoTop({-->
+                <!--easingType: 'easeOutQuart'-->
+            <!--});-->
+
+        <!--});-->
+    <!--</script>-->
+    <!--&lt;!&ndash; //here ends scrolling icon &ndash;&gt;-->
+
+    <!--&lt;!&ndash; for bootstrap working &ndash;&gt;-->
+    <!--<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>-->
+
+
+
+
+    <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- js -->
+    <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <!-- //js -->
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+    <!-- Custom-JavaScript-File-Links -->
+    <!-- cart-js -->
+    <script src="{% static 'js/minicart.min.js' %}"></script>
+    <script>
+        // Mini Cart
+        paypal.minicart.render({
+            action: '#'
+        });
+
+        if (~window.location.search.indexOf('reset=true')) {
+            paypal.minicart.reset();
+        }
+    </script>
+
+    <!-- //cart-js -->
+    <!-- single -->
+    <script src="{% static 'js/imagezoom.js' %}"></script>
+    <!-- single -->
+    <!-- script for responsive tabs -->
+    <script src="{% static 'js/easy-responsive-tabs.js' %}"></script>
+    <script>
+        $(document).ready(function() {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                activate: function(event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+            $('#verticalTab').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+    </script>
+    <!-- FlexSlider -->
+    <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+            });
+        });
+    </script>
+    <!-- //FlexSlider-->
+    <!-- //script for responsive tabs -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            	var defaults = {
+            	containerID: 'toTop', // fading element id
+            	containerHoverID: 'toTopHover', // fading element hover id
+            	scrollSpeed: 1200,
+            	easingType: 'linear'
+            	};
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+
+    <!-- for bootstrap working -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>

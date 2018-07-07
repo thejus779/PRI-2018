@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <!--/tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--//tags -->
+    {% include 'snippets/css.html' %}
+</head>
+
+<body>
+  <!-- Header included from snipper -->
+    {% include 'snippets/header-bot.html' %}
+    <!-- banner -->
+    <div class="ban-top">
+        <div class="container">
+            <div class="top_nav_left">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu__list">
+                                <li class=" menu__item"><a class="menu__link" href="/">Home <span class="sr-only">(current)</span></a></li>
+                                <li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="/post/">Post An Item</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="Electronic.html">Electronic</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="/login/"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
+                                <li class="active menu__item menu__item--current"><a class="menu__link" href="/signup/"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            {% include 'snippets/shopping-cart.html' %}
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="banner_bottom_agile_info">
+        <div class="container">
+            <div class="form">
+                <h4 class="white-w3ls">SIGN <span>UP</span></h4>
+                {% if form.errors %}
+                    <!-- <ul class='form-errors'> -->
+                    <!--{% for field, errors in form.errors.items %}-->
+                        {% for error in errors %}
+                             <div style="color: #be091c">{{ error }}</div>
+                        {% endfor %}
+                    <!--{% endfor %}-->
+                    <!-- </ul> -->
+                {% endif %}
+                <form method='POST' action = {% url 'signup' %} class="form-signup"> {% csrf_token %}
+                    <!-- {% if form.errors %}
+                        <ul class='form-errors'>
+                        {% for error in form.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %} -->
+                    
+                     <!--{{ form }}-->
+                    <div class="styled-input">
+                        <input type="text" name="fullname" id ="fullname" required="">
+                        <label>Full Name</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input">
+                        <input type="text" name="username" id ="username" required="">
+                        <label>Username</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input agile-styled-input-top">
+                        <input type="email" name="email" id ="email" required="">
+                        <label>Email</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input agile-styled-input-top">
+                        <input type="password" name="password1" id ="password1" required="">
+                        <label>Password</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input agile-styled-input-top">
+                        <input type="password" name="password2" id ="password2" required="">
+                        <label>Confirm Password</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input">
+                        <input type="text" name="address" id ="address" required="">
+                        <label>Address</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input">
+                        <input type="text" name="city" id ="city" required="">
+                        <label>City</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input">
+                        <input type="text" name="postalcode" id ="postalcode" required="">
+                        <label>Postal Code</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input">
+                        <input type="text" name="country" id ="country" required="">
+                        <label>Country</label>
+                        <span></span>
+                    </div>
+                    <div class="styled-input agile-styled-input-top">
+                        <input type="tel" name="mobilenumber" id ="mobilenumber" required="">
+                        <label>Mobile Number</label>
+                        <span></span>
+                    </div>
+                    <input type="submit" value="Sign Up">
+                </form> 
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- Footer snippet -->
+    {% include 'snippets/footer.html' %}
+<!-- //login -->
+{% include 'snippets/js-login-signup.html' %}
+
+</body>
+
+</html>
