@@ -81,10 +81,26 @@
         <div class="container">
             <div class="edit-form">
                 <h4 class="white-w3ls">Edit <span>Profile</span></h4>
-                <form action="#" method="post">
+                {% if form.errors %}
+                    <!-- <ul class='form-errors'> -->
+                    <!--{% for field, errors in form.errors.items %}-->
+                        {% for error in errors %}
+                             <div style="color: #be091c">{{ error }}</div>
+                        {% endfor %}
+                    <!--{% endfor %}-->
+                    <!-- </ul> -->
+                {% endif %}
+                <form action="#" method="post">{% csrf_token %}
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" name="Full Name" value="Eric" required="">
+                            <input type="text" name="fullname" value="{{ user.fullname }}" required="">
+                            <label>Full Name</label>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" name="username" value="{{ request.user.username}}" required="">
                             <label>Full Name</label>
                             <span></span>
                         </div>
@@ -92,7 +108,7 @@
 
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="email" name="email" value="eric09@gmail.com" required="">
+                            <input type="email" name="email" value="{{ request.user.email }}" required="">
                             <label>Email</label>
                             <span></span>
                         </div>
@@ -100,44 +116,44 @@
 
                     <div class="row">
                         <div class="col-md-5">
-                            <input type="password" name="password" value="oldone" required="">
-                            <label>Password</label>
+                            <input type="hidden" name="password1" value={{request.user.password}} required="">
+                            <!--<label>Password</label>-->
                             <span></span>
                         </div>
                         <div class="col-md-5">
-                            <input type="password" name="Confirm password" value="oldone" required="">
-                            <label>Confirm Password</label>
+                            <input type="hidden" name="password2" value={{request.user.password}} required="">
+                            <!--<label>Confirm Password</label>-->
                             <span></span>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-9">
-                            <input type="text" name="Address" value="21 Rue Des Malmaisons" required="">
+                            <input type="text" name="address" value="{{ user.address }}" required="">
                             <label>Address</label>
                             <span></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" name="City" value="Paris" required="">
+                            <input type="text" name="city" value="{{ user.city }}" required="">
                             <label>City</label>
                             <span></span>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" name="Postal Code" value="75013" required="">
+                            <input type="text" name="postalcode" value="{{ user.postalcode }}" required="">
                             <label>Postal Code</label>
                             <span></span>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" name="Country" value="France" required="">
+                            <input type="text" name="country" value="{{ user.country }}" required="">
                             <label>Country</label>
                             <span></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-5">
-                            <input type="tel" name="Mobile Number" value="0751096646" required="">
+                            <input type="tel" name="mobilenumber" value="{{ user.mobilenumber }}" required="">
                             <label>Mobile Number</label>
                             <span></span>
                         </div>

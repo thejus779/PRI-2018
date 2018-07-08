@@ -12,7 +12,7 @@ from django.shortcuts import render, redirect
 from django.conf import settings
 from django.db import transaction
 from .utils import unique_slug_generator
-from .forms import LoginForm, SignUpForm
+from .forms import LoginForm, SignUpForm, UpdateUpForm,User
 from .models import Profile
 from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
@@ -94,25 +94,50 @@ def display_profile(request):
 @login_required
 # @transaction.atomic
 def update_profile(request):
-	return render(request, 'index.html', {'form': form})
-#     if request.method == 'POST':
-#         user_form = UserForm(request.POST, instance=request.user)
-#         profile_form = ProfileForm(request.POST, instance=request.user.profile)
-#         if user_form.is_valid() and profile_form.is_valid():
-#             user_form.save()
-#             profile_form.save()
-#             messages.success(request, 'Your profile was successfully updated!')
-#             # return redirect('settings:profile')
-#             return redirect('home')
-#         else:
-#             messages.error(request, 'Please correct the error below.')
-#     else:
-#         user_form = UserForm(instance=request.user)
-#         profile_form = ProfileForm(instance=request.user.profile)
-#     return render(request, 'profile.html', {
-#         'user_form': user_form,
-#         'profile_form': profile_form
-    # })
+
+    if request.method == 'POST':
+
+        user_form = UpdateUpForm(request.POST, instance=request.user)
+        user = User.objects.get(id=request.user.id)
+        user_profile = Profile.objects.get(user=request.user)
+        print('user form is')
+        print(user_form)
+        if user_form.is_valid():
+            user_profile.fullname = user_form.cleaned_data.get('fullname')
+            user_profile.postalcode = user_form.cleaned_data.get('postalcode')
+            user_profile.city = user_form.cleaned_data.get('city')
+            user_profile.address = user_form.cleaned_data.get('address')
+            user_profile.country = user_form.cleaned_data.get('country')
+            user_profile.mobilenumber = user_form.cleaned_data.get('mobilenumber')
+            user.email = user_form.cleaned_data.get('email')
+            user.username = user_form.cleaned_data.get('username')
+            print(user.username)
+            print(user_form.cleaned_data.get('username'))
+            if User.objects.filter(username=user_form.cleaned_data.get('username')).exists():
+                messages.error("Username already exists")
+                # raise forms.ValidationError(u'Username "%s" is not available.' % newusername)
+            else:
+                if User.objects.filter(username=user_form.cleaned_data.get('email')).exists():
+                    messages.error("Username already exists")
+                else:
+                    user.username = user_form.cleaned_data.get('username')
+                    user.email = user_form.cleaned_data.get('email')
+                    user.save()
+                    user_profile.save()
+                    messages.success(request, 'Your profile was successfully updated!')
+
+            return redirect('profile')
+        else:
+            messages.error(request, 'Please correct the error below.')
+            return render(request, 'editProfile.html', {'form':user_form})
+
+
+    else:
+        template_name = 'editProfile.html'
+        user_profile = Profile.objects.get(user=request.user)
+        context = {'user': user_profile}
+        print(context)
+        return render(request, template_name, context)
 
 class MyLoginView(LoginView):
     success_url = 'index.html'

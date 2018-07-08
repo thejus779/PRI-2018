@@ -1,6 +1,8 @@
 from django import forms
 from .models import Image
 from .models import Parts
+from .models import Query
+from django.forms.widgets import NumberInput
 # from .validators import validate_category
 
 
@@ -42,3 +44,37 @@ class ImageForm(forms.ModelForm):
 #         if User.objects.filter(username).exists():
 #             raise forms.ValidationError(_("This username already exists."))
 #         return cleaned_data
+
+class QueryCaseBaseForm(forms.ModelForm):
+    class Meta:
+        model = Query
+        fields = ("category", "make", "country", "manufacturer",
+                 "manufacturerYear",
+                  "city", "zipCode", "usedDuration")
+
+        widgets = {
+            # 'visualQualityRating': NumberInput (attrs={'type': 'range', 'step': '1', 'max': '10', 'min': '1',
+            #                                              'value': '5', 'oninput': 'visualOutput.value=this.value'}),
+            'manufacturerYear': NumberInput (attrs={'type': 'range', 'step': '1', 'max': '10', 'min': '1',
+                                                       'value': '5', 'oninput': 'yearOutput.value=this.value'}),
+            'zipCode': NumberInput (attrs={'type': 'range', 'step': '1', 'max': '10', 'min': '1',
+                                                            'value': '5',
+                                                            'oninput': 'zipOutput.value=this.value'}),
+            'usedDuration': NumberInput (attrs={'type': 'range', 'step': '1', 'max': '10', 'min': '1',
+                                                          'value': '5', 'oninput': 'usedDOutput.value=this.value'}),
+
+        }
+
+    def __init__(self, *args, **kwargs):
+        super(QueryCaseBaseForm, self).__init__(*args, **kwargs)
+        self.fields["category"].required = False
+        self.fields["make"].required = False
+        # self.fields["continent"].required = False
+        self.fields["country"].required = False
+        self.fields["manufacturer"].required = False
+        # self.fields["language"].required = False
+        # self.fields["visualQualityRating"].required = False
+        self.fields["manufacturerYear"].required = False
+        self.fields["city"].required = False
+        self.fields["zipCode"].required = False
+        self.fields["usedDuration"].required = False

@@ -6,41 +6,51 @@ from django.views.generic import TemplateView,ListView,DetailView, CreateView
 from django.http import HttpResponse
 from django.views import View
 from django.db.models import Q
+import json
+import requests
 from .models import Image
 from .forms import ImageForm
-from .forms import PostPartCreateForm
+from .forms import PostPartCreateForm, QueryCaseBaseForm
 from .models import Parts
 from django.shortcuts import render, redirect
 from notif.forms import BuyRequest
 from core.models import Profile
 from notif.models import Notification
+from django.contrib import messages
 
 @login_required(login_url='/login/')
 def create_parts(request):
-    form = PostPartCreateForm(request.POST,request.FILES)
-    errors = None
-    print(form)
-    if form.is_valid():
-        if request.user.is_authenticated():
-            instance = form.save(commit=False)
-            # custoize and signals
-            #  pre save
-            instance.owner = request.user
-            instance.save()
-            # file = form.cleaned_data['image']
-            # post save
-            return redirect('home')
-        else:
-            return HttpResponseRedirect("/login/")
-    if form.errors:
-        errors = form.errors
+    if request.method == 'POST':
+        form = PostPartCreateForm(request.POST, request.FILES)
+        errors = None
+        print(form)
+        if form.is_valid():
+            if request.user.is_authenticated():
+                instance = form.save(commit=False)
+                # custoize and signals
+                #  pre save
+                instance.owner = request.user
+                instance.save()
+                # file = form.cleaned_data['image']
+                # post save
+                return redirect('home')
+            else:
+                return HttpResponseRedirect("/login/")
+        if form.errors:
+            errors = form.errors
 
-    template_name = 'post.html'
-    context = {"form": form, "errors":errors
-               }
+        template_name = 'post.html'
+        context = {"form": form, "errors": errors
+                   }
 
-    return render(request,template_name,context)
+        return render(request, template_name, context)
 
+    else:
+        template_name = 'post.html'
+        context = {
+                   }
+
+        return render(request, template_name, context)
 
 # class PartCreateView(LoginRequiredMixin, CreateView):
 #     form_class = PostPartCreateForm
@@ -133,3 +143,172 @@ def display_buy_part(request,slug):
         print(context)
         print(slug)
         return render(request, template_name, context)
+
+
+def get_all_products(request):
+
+    template_name = 'index.html'
+    queryset = Parts.objects.filter(~Q(owner=request.user))
+
+    context = {"parts": queryset}
+    print(context)
+
+    return render(request, template_name, context)
+
+
+@login_required(login_url='/login/')
+def update_part(request,slug):
+
+    if request.method == 'POST':
+
+        form = PostPartCreateForm(request.POST or None, request.FILES or None, instance=request.user)
+        # form = PostPartCreateForm(request.POST, request.FILES)
+        part = Parts.objects.get(slug=slug)
+        print(' form is')
+        print(form)
+        if form.is_valid():
+            if request.user.is_authenticated():
+                # edit = form.save(commit=False)
+                # edit.save()
+                # instance = form.save(commit=False)
+                # custoize and signals
+                #  pre save
+                # instance.save()
+                part.name = form.cleaned_data.get('name')
+                part.category = form.cleaned_data.get('category')
+                part.manufacturer = form.cleaned_data.get('manufacturer')
+                part.modelName = form.cleaned_data.get('modelName')
+                part.manufacturingYear = form.cleaned_data.get('manufacturingYear')
+                part.usedDuration = form.cleaned_data.get('usedDuration')
+                part.description = form.cleaned_data.get('description')
+                if form.cleaned_data.get('images'):
+                    part.images = form.cleaned_data.get('images')
+                else:
+                    part.images = part.images
+                # if User.objects.filter(username=user_form.cleaned_data.get('username')).exists():
+                # messages.error("Username already exists")
+                # # raise forms.ValidationError(u'Username "%s" is not available.' % newusername)
+                # else:
+                #     if User.objects.filter(username=user_form.cleaned_data.get('email')).exists():
+                #         messages.error("Username already exists")
+                #     else:
+                # user.username = user_form.cleaned_data.get('username')
+                # user.email = user_form.cleaned_data.get('email')
+                part.save()
+                # user_profile.save()
+                print(part.description)
+                print("sdasdsadsa")
+                messages.success(request, 'Your part was successfully updated!')
+                return redirect('posted')
+        else:
+            messages.error(request, 'Please correct the error below.')
+            return render(request, 'updatepost.html', {'form':form})
+
+
+    else:
+        template_name = 'updatepost.html'
+        part = Parts.objects.get(slug=slug)
+        context = {'part': part}
+        return render(request, template_name, context)
+
+
+def filter_section(request):
+    return render(
+        request,
+        'filter.html'
+    )
+
+def search(request):
+    """Our Search form easy thanks Django ORM and title__contains"""
+    # gigs = Gig.objects.filter(title__contains=request.GET.get('title'))
+
+    return render(
+        request,
+        'home.html',{}
+        # {'gigs': gigs, 'media_url': MEDIA_URL}
+    )
+
+#@login_required(login_url=login_selection)
+def search_results(request):
+    import logging
+    logging.basicConfig(filename='formlog.log', level=logging.DEBUG)
+    # the request is a normal query
+    if request.method == 'POST':
+        form = QueryCaseBaseForm(request.POST)
+        #profile = Profile.objects.get(user=request.user)
+
+        logging.debug('form=%s', form)
+
+        if form.is_valid():
+            logging.debug('form is valid')
+
+            payload = json.dumps({
+                "Category": form.data["drop_category"],
+                "Model": form.data["drop_model"],
+                # "Continent": form.data["drop_continent"],
+                "Country": form.data["drop_country"],
+                "Manufacturer": form.data["drop_manufacturer"],
+                # "Language": form.data["drop_language"],
+                #"VisualQuality": form.data["drop_visual"],
+                #"MakeYear": form.data["drop_year"],
+
+                "Zip": form.data["drop_zip"],
+                "City": form.data["drop_city"],
+                # "UsageDuration": form.data["drop_duration"],
+
+
+                # "Model": "Iphone5",
+                # "Manufacturer": "Apple",
+                # "Category": "Cell Phone",
+
+                                     # http: // localhost:8080 / swagger - ui.html
+
+            })
+            headers = {
+                'content-type': 'application/json'
+            }
+            r = requests.post(
+                "http://localhost:8080/retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function",
+            # r = requests.post("http://159.65.82.239:8080/retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function",
+            #r = requests.post("http://159.65.82.239:8080/retrievalWithContent.json?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function",
+
+                               data=payload,
+                               headers=headers
+                               ).json()["similarCases"]
+
+            full_similar_cases = []
+            # if full_similar_cases
+            # Filling each case with their full information, and formatting them
+            for key, value in r.items():
+
+                # Sorting out every case below 0.20 similarity
+                if value > 0.0:
+                    full_case = requests.get("http://localhost:8080//case?caseID=" + key).json()["case"]
+                    full_case["Similarity"] = "%.3f" % value
+                    full_similar_cases.append(full_case)
+
+            # Sorting the case list based on similarity
+            sorted_full_similar_cases = sorted(full_similar_cases, key=lambda k: k['Similarity'], reverse=True)
+            if sorted_full_similar_cases:
+
+                print(sorted_full_similar_cases)
+
+                return render(request, 'search_results.html',
+                               {'form': form, 'similar_cases': sorted_full_similar_cases[:3]
+                                })
+            else:
+                return redirect('home')
+        else:
+            print("Form error")
+            form = QueryCaseBaseForm()
+
+        return render(request, 'no_search_result.html', {'form': form})
+
+
+def no_search_section(request):
+    form = QueryCaseBaseForm()
+    return render(
+        request,
+        'no_search_result.html',
+        {"form": form}
+    )

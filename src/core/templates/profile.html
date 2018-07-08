@@ -91,16 +91,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-8 myprofile simpleCart_shelfItem">
                 <h3>My Profile</h3>
                 <p>Name:
-                    <span>{{ user.name }}</span>
+                    <span>{{ user.fullname }}</span>
                 </p>
-                <p>Email Address: <span>{{ user.email }}</span></p>
-                <p>Mobile Number: <span>0751096646</span></p>
-                <p> Address: <span>21 Rue des Malmaisons</span></p>
+                <p>Email Address: <span>{{ request.user.email }}</span></p>
+                <p>Mobile Number: <span>{{user.mobilenumber}}</span></p>
+                <p> Address: <span>{{user.address}}</span></p>
                 <!-- <input type="hidden" name="amount" value="650.00"> -->
-                <p> City: <span>Paris</span> </p>
-                <p> Country: <span>France</span></p>
-                <p> Postal Code: <span>75013</span> </p>
-                <button onclick="editProfile.html">Edit Profile</button>
+                <p> City: <span>{{user.city}}</span> </p>
+                <p> Country: <span>{{user.country}}</span></p>
+                <p> Postal Code: <span>{{user.postalcode}}</span> </p>
+                <form action="/edit/" method="get">
+                    <!--{% csrf_token %}-->
+                   <button type="submit">Edit Profile</button>
+                </form>
+
 
             </div>
             <div class="clearfix"> </div>

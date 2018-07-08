@@ -27,6 +27,13 @@ from home.views import (
     create_parts,
     display_buy_part,
     PartsDetailsView,
+    get_all_products,
+    update_part,
+    filter_section,
+    search,
+    search_results,
+    no_search_section,
+
 
 )
 from core.views import (
@@ -37,12 +44,14 @@ from core.views import (
     user_profile,
     logout_view,
     delte_user_part,
+
     # display_profile,
     # DisplayProfile,
 )
 from notif.views import (
     get_notifications,
     reply_select,
+
 )
 
 urlpatterns = [
@@ -56,22 +65,26 @@ urlpatterns = [
     # url(r'^login/$', login_view, name='login'),
     url(r'^login/$', LoginView.as_view(), name='login'),
     url(r'^view3/$', TemplateView.as_view(template_name='view3.html')),
-    # url(r'^profile/$',update_profile, name='profile'),
-    url(r'^$', TemplateView.as_view(template_name='index.html'),name='home'),
+    url(r'^update/(?P<slug>[\w-]+)/$', update_part),
+    url(r'^$', get_all_products, name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='about.html')),
     url(r'^post/$', create_parts),
     url(r'^contact/$', TemplateView.as_view(template_name='contact.html')),
     url(r'^details/$', TemplateView.as_view(template_name='details.html')),
     url(r'^posted/$', user_parts,name='posted'),
-    url(r'^edit/$', TemplateView.as_view(template_name='editProfile.html')),
-    url(r'^profile/$', user_profile),
+    url(r'^edit/$', update_profile),
+    url(r'^profile/$', user_profile,name='profile'),
     url(r'^notifications/$', get_notifications),
     url(r'^reply/(?P<id>[\d]+)$', reply_select),
     url(r'^imgsearch/$', TemplateView.as_view(template_name='searchByImage.html')),
     url(r'^part/(?P<slug>[\w-]+)/$', display_buy_part),
     url(r'^delete/(?P<id>[\d]+)/$', delte_user_part),
     url(r'^logout/$', logout_view),
-
+    url(r'^/$', get_all_products),
+    url(r'^filter/$',filter_section, name='filter_section'),
+    url(r'^search/$',search, name='search'),
+    url(r'^search_results/$', search_results, name='search_results'),
+    url(r'^no_search_result/$', no_search_section, name='no_search_result'),
     # url(r'^media/(?P<path>.*)$', serve, {
         # 'document_root': settings.MEDIA_ROOT}),
 ]

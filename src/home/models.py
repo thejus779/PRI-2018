@@ -30,7 +30,7 @@ class Parts(models.Model):
     manufacturingYear = models.CharField(max_length=30, blank=True, help_text='Manufacturing year')
     description = models.CharField(max_length=3000, blank=True, help_text='Description about the product')
     usedDuration = models.CharField(max_length=30, blank=True, help_text='Number of years the product is used')
-    images = models.FileField(upload_to='images/%Y/%m/%D/', null=True, verbose_name="")
+    images = models.FileField(upload_to='images/%Y/%m/%D/', null=True, verbose_name="",blank=True)
     is_available = models.BooleanField(default=False)
 
     # email = 		models.EmailField(max_length=255, blank=True,help_text='Required. Inform a valid email address.')
@@ -72,3 +72,103 @@ pre_save.connect(post_pre_save_receiver, sender=Parts)
 # pre_save.connect(rl_pre_save_receiver,sender=Parts)
 
 # post_save.connect(rl_post_save_receiver,sender=RestaurantLocation)
+
+
+# class Continent (models.Model):
+#     name = models.CharField (max_length=100, primary_key=True)
+#
+#     def __str__(self):
+#         return self.name
+#
+#     class Meta:
+#         verbose_name_plural = 'continents'
+
+
+class Country (models.Model):
+    name = models.CharField (max_length=100, primary_key=True)
+    # continent = models.ForeignKey (Continent)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'countries'
+
+
+class Category (models.Model):
+    name = models.CharField (max_length=100, unique=True)
+    acronym = models.CharField (max_length=10, blank=True)
+    country = models.ForeignKey (Country, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def natural_key(self):
+        return (self.name,)
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+#
+# class Language (models.Model):
+#     name = models.CharField (max_length=30, primary_key=True)
+#
+#     def __str__(self):
+#         return self.name
+
+
+class Manufacturer (models.Model):
+    name = models.CharField (max_length=30, primary_key=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Make (models.Model):
+    name = models.CharField (max_length=30, primary_key=True)
+
+    def __str__(self):
+        return self.name
+
+
+class City (models.Model):
+    name = models.CharField (max_length=30, primary_key=True)
+
+    def __str__(self):
+        return self.name
+
+
+
+
+class Case (models.Model):
+    category = models.ForeignKey (Category)
+    manufacturer = models.ForeignKey (Manufacturer)
+    make = models.ForeignKey (Make)
+    visualQualityRating = models.IntegerField ()
+    manufacturerYear = models.IntegerField ()
+    zipCode = models.IntegerField ()
+    usedDuration = models.IntegerField ()
+    country = models.ForeignKey (Country)
+    city = models.ForeignKey (City)
+    # continent = models.ForeignKey (Continent)
+    # language = models.ForeignKey (Language)
+
+    def __str__(self):
+        return self.category + ':' + str(self.pk)
+
+
+class Query (models.Model):
+    category = models.ForeignKey (Category)
+    manufacturer = models.ForeignKey (Manufacturer)
+    make = models.ForeignKey (Make)
+    visualQualityRating = models.IntegerField ()
+    manufacturerYear = models.IntegerField ()
+    zipCode = models.IntegerField ()
+    usedDuration = models.IntegerField ()
+    country = models.ForeignKey (Country)
+    city = models.ForeignKey (City)
+    # continent = models.ForeignKey (Continent)
+    # language = models.ForeignKey (Language)
+
+    def __str__(self):
+        return self.category + ':' + str (self.pk)

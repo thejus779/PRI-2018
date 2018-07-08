@@ -1125,7 +1125,7 @@
         width: 100%;
         border-bottom: 1px solid #ffffff;
         background: none;
-        -webkit-appearance: none;
+
         outline: none;
         margin-bottom: 20px;
     }
@@ -1759,6 +1759,7 @@
     
     .product-men img {
         width: 100%;
+        height: 100%;
     }
     /*-- //new_arrivals --*/
     /*-- Shopping-Cart-PopUp --*/
@@ -1961,6 +1962,8 @@
     
     .men-thumb-item .pro-image-front {
         opacity: 1;
+        width: 220px;
+        height: 240px;
         visibility: visible;
     }
     

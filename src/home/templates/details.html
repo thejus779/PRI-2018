@@ -62,7 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <li><a href="/posted/">Posted Item</a></li>
                                         <form action="/logout/">
 
-                                          <li><button onclick="return confirm('Are you sure?')"> log out <i class="fa fa-sign-out aria-hidden=true "> </i></button></li>
+                                          <li><button onclick="return confirm('Are you sure you want to logout?')"> log out <i class="fa fa-sign-out aria-hidden=true "> </i></button></li>
                                         </form>
 
                                         <!--<li><form action="/logout/"><i class="fa fa-sign-out aria-hidden=true "></i>i><input type="submit" value="Go to Google" /></form></li>-->
@@ -150,26 +150,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p> City: <span>Paris</span></p>
                 <input type="hidden" name="return" value=" ">
                 <p>Details: <span>{{ part.description }}</span></p>
-                {% if request.user.is_authenticated %}
-                <form method="POST">
-                    {% csrf_token %}
-                    <input type="hidden" name="message" value="requested for">
-                    <input type="hidden" name="buyer_name" value={{profile.name}}>
-                    <input type="hidden" name="part_name" value={{part.name}}>
-                    <input type="hidden" name="buyer_id" value={{request.user.id}}>
-                    <input type="hidden" name="part_id" value={{part.id}}>
-                    <input type="hidden" name="seller_id" value={{part.owner.id}}>
-                    <input type="hidden" name="is_valid" value="True">
-                    <input type="submit" name="buy" value="Exchange" class="button">
-                </form>
-                {% else %}
-                    <!--<form method="POST">-->
-                        <!--{% csrf_token %}-->
-                        <input type="submit" name="login" value="Login To Exchange" class="button">
-                        <a href="{% url 'login' %}?next={{request.path}}">Login</a>
-                    <!--</form>-->
-                {% endif %}
+                {% ifequal part.owner request.user %}
+                    <form method="POST">
+                        {% csrf_token %}
+                        <!--<input type="hidden" name="message" value="requested for">-->
+                        <!--<input type="hidden" name="buyer_name" value={{profile.name}}>-->
+                        <!--<input type="hidden" name="part_name" value={{part.name}}>-->
+                        <!--<input type="hidden" name="buyer_id" value={{request.user.id}}>-->
+                        <!--<input type="hidden" name="part_id" value={{part.id}}>-->
+                        <!--<input type="hidden" name="seller_id" value={{part.owner.id}}>-->
+                        <input type="hidden" name="is_valid" value="True">
+                        <input type="submit" name="edit" value="Edit" class="button">
+                        <input type="submit" name="delete" value="Delete" class="button">
+                    </form>
 
+
+
+                {% else %}
+                 {% if request.user.is_authenticated %}
+                    <form method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="message" value="requested for">
+                        <input type="hidden" name="buyer_name" value={{profile.name}}>
+                        <input type="hidden" name="part_name" value={{part.name}}>
+                        <input type="hidden" name="buyer_id" value={{request.user.id}}>
+                        <input type="hidden" name="part_id" value={{part.id}}>
+                        <input type="hidden" name="seller_id" value={{part.owner.id}}>
+                        <input type="hidden" name="is_valid" value="True">
+                        <input type="submit" name="buy" value="Exchange" class="button">
+                    </form>
+                    {% else %}
+                        <!--<form method="POST">-->
+                            <!--{% csrf_token %}-->
+                            <input type="submit" name="login" value="Login To Exchange" class="button">
+                            <a href="{% url 'login' %}?next={{request.path}}">Login</a>
+                        <!--</form>-->
+                    {% endif %}
+
+                 {% endifequal %}
 
             </div>
             <div class="clearfix"> </div>

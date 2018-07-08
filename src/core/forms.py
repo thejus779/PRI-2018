@@ -51,10 +51,11 @@ class SignUpForm(UserCreationForm):
     country =          forms.CharField(max_length=30, required=True, help_text='XYZ.')
     mobilenumber =     forms.DecimalField(max_digits=10, required=True, help_text='XYZ.')
     email =            forms.EmailField(max_length=255, help_text='Required. Inform a valid email address.')
+    username = forms.CharField(max_length=255, help_text='Username')
 
     class Meta:
         model = User
-        fields = ('fullname', 'username', 'email', 'password1', 'password2', 'address', 'city', 'postalcode', 'country', 'mobilenumber' )
+        fields = ('fullname', 'username', 'email', 'password1', 'password2', 'address', 'city', 'postalcode', 'country', 'mobilenumber')
 
     # def clean_username(self):
     #     username=self.cleaned_data['username']
@@ -69,11 +70,15 @@ class SignUpForm(UserCreationForm):
     #         user.save()
 
     #     return user
-# class UserCreateForm(forms.ModelForm):
-#     class  Meta:
-#         model = User
-        # fields = [
-        #     'name',
-        #     'location',
-        #     'catergory',
-        #     ]
+class UpdateUpForm(UserCreationForm):
+    fullname =         forms.CharField(max_length=30, required=True, help_text='Full name.')
+    address =          forms.CharField(max_length=255, required=True, help_text='House number and street')
+    city =             forms.CharField(max_length=30, required=True, help_text='XYZ.')
+    postalcode =       forms.CharField(max_length=10, required=True, help_text='XYZ.')
+    country =          forms.CharField(max_length=30, required=True, help_text='XYZ.')
+    mobilenumber =     forms.DecimalField(max_digits=10, required=True, help_text='XYZ.')
+    email = forms.EmailField(max_length=255, help_text='Required. Inform a valid email address.')
+
+    class Meta:
+        model = User
+        fields = ('fullname', 'address', 'city', 'postalcode', 'country', 'mobilenumber','email','username')
