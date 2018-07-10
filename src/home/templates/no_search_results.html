@@ -17,6 +17,7 @@
         }
 
 
+
     </script>
     <!--//tags -->
     {% load staticfiles %}
@@ -65,10 +66,10 @@
                                 <ul class="dropdown-menu agile_short_dropdown">
                                     <li><a href="/profile/">My Profile</a></li>
                                     <li><a href="/posted/">Posted Item</a></li>
-                                    <form action="/logout/">
-
-                                          <li><button onclick="return confirm('Are you sure you want to logout?')"> log out <i class="fa fa-sign-out aria-hidden=true "> </i></button></li>
-                                    </form>
+                                    <li>
+                                        <button onclick=" "> log out <i class="fa fa-sign-out aria-hidden=true "> </i>
+                                        </button>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -94,146 +95,88 @@
 <!-- //banner-top -->
 
 
-<div class="container">
+<div class="new_arrivals_agile_w3ls_info">
 
-    <!-- SEARCH PANEL -->
-    <div class="form-Post">
-        <form id="product_search" action="/search_results/" accept-charset="UTF-8"
-              data-remote="true" method="post">{% csrf_token %}<input name="utf8" type="hidden" value="✓">
-            <div class="row">
-
-
-                <div class="col-md-4">
-                    <!--<div class="form-group select">-->
-                    <!--    <div class="col-md-8">
-                  <label>Price Range:</label>
-                  <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="background: white; border-color: rgb(0, 166, 153);"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 10%; width: 40%; background: rgb(0, 166, 153);"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 10%; background: white; border-color: rgb(0, 166, 153);"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%; background: white; border-color: rgb(0, 166, 153);"></span></div>
-               -->
-                    <!--<label for="drop_category">Category:</label>-->
-
-                    <select type="select" name="drop_category" id="drop_category"></select>
-
-                    <!--</div>-->
-                </div>
-
-                <!--<div class="col-md-2">-->
-
-
-                    <!--<select type="select" name="drop_price" id="drop_price"></select>-->
-
-                <!--</div>-->
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-4">
-
-
-                    <select type="select" name="drop_manufacturer" id="drop_manufacturer">
-                        <option value="">Select...</option>
-                    </select>
-
-                </div>
-                <div class="col-md-4">
-
-
-                    <select type="select" name="drop_model" id="drop_model"></select>
-
-                </div>
-                <div class="col-md-4">
-                    <!-- <div class="form-group select">
-                       <label>Social Quality</label>
-                       <select name="drop_social" id="drop_social"><option value="">Select...</option></select>
-                     </div>  -->
-                </div>
-            </div>
-
-            <div class="row">
-                <!--<div class="col-md-4">-->
-
-
-                    <!--<select type="select" name="drop_visual" id="drop_visual"></select>-->
-
-                <!--</div>-->
-                <div class="col-md-4">
-
-
-                    <select type="select" name="drop_year" id="drop_year"></select>
-
-                </div>
-                <div class="col-md-4">
-
-
-                    <select type="select" name="drop_zip" id="drop_zip"></select>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-
-
-                    <select type="select" name="drop_duration" id="drop_duration"></select>
-
-                </div>
-                <div class="col-md-4">
-
-
-                    <select type="select" name="drop_country" id="drop_country"></select>
-
-                </div>
-                <div class="col-md-4">
-
-
-                    <select type="select" name="drop_city" id="drop_city"></select>
-
-                </div>
-            </div>
-
-
-            <div class="styled-input">
-                <input type="submit" name="commit" value="Search" class="btn btn-form"
-                       data-disable-with="Search">
-            </div>
-
-        </form>
-
-    </div>
+    <form class='form-Post'action="/register_post">
+                            {% csrf_token %}
+        <p style="color: white; font-size: 1.5em;">Couldn't find what you are looking for?</p>
+            <p style="color: white; font-size: 1.5em;">Register for notifications when the product is available</p>
+        <input type="submit" name="submit" value="Register" class="button" style="margin-left: 40%; margin-top: 10%;"/>
+    </form>
 
 
 </div>
-</div>
 
-<!--
-           <div id="right">
+<!-- /new_arrivals -->
+<!--<div class="new_arrivals_agile_w3ls_info">-->
+<!--<div class="container">-->
+<!--&lt;!&ndash;<h3 class="wthree_text_info">New <span>Arrivals</span></h3>&ndash;&gt;-->
+<!--<div id="horizontalTab">-->
+<!--<ul class="resp-tabs-list">-->
+<!--<li> Parts </li>-->
+<!--</ul>-->
+<!--<div class="resp-tabs-container">-->
+<!--&lt;!&ndash;/tab_one&ndash;&gt;-->
+<!--{% for p in parts %}-->
+<!--<div class="tab1">-->
+<!--<div class="col-md-3 product-men">-->
+<!--<div class="men-pro-item simpleCart_shelfItem">-->
+<!--<div class="men-thumb-item">-->
+<!--<img src="{{ p.images.url }}" alt="" class="pro-image-front">-->
+<!--<img src="{{ p.images.url }}"  alt="" class="pro-image-back">-->
+<!--<div class="men-cart-pro">-->
+<!--<div class="inner-men-cart-pro">-->
+<!--<a href="/part/{{p.slug}}" class="link-product-add-cart">Quick View</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;<span class="product-new-top">New</span>&ndash;&gt;-->
 
-<div id="map" style="width: 100%; height: 100%; position: relative; overflow: auto;">
+<!--</div>-->
+<!--<div class="item-info-product ">-->
+<!--<h4><a href="/part/{{p.slug}}">{{p.name}}</a></h4>-->
+<!--<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">-->
+<!--&lt;!&ndash;<form action="#" method="post">&ndash;&gt;-->
+<!--<fieldset>-->
+<form action="/part/{{p.slug}}">
+    {% csrf_token %}
+    <input type="submit" name="submit" value="Exchange" class="button"/>
+</form>
+<!--<submit type = submit name="Exchange" ><a  href="/part/{{p.slug}}">Exchange</a></submit>-->
 
-    <div id="svgContainer" style="background-color:#F8F8F8;display:inline-block"></div>
-  <script src='https://labs.nearpod.com/bodymovin/demo/perricorn/bodymovin.js'></script>
-<script src='https://labs.nearpod.com/bodymovin/demo/perricorn/data.js'></script>
+<!--</fieldset>-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--{% endfor %}-->
 
 
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-    <script  src="{% static 'js/index.js' %}"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+<!--&lt;!&ndash;-->
+<!--<div id="right">-->
+
+<!--<div id="map" style="width: 100%; height: 100%; position: relative; overflow: auto;">-->
+
+<!--<div id="svgContainer" style="background-color:#F8F8F8;display:inline-block"></div>-->
+<!--<script src='https://labs.nearpod.com/bodymovin/demo/perricorn/bodymovin.js'></script>-->
+<!--<script src='https://labs.nearpod.com/bodymovin/demo/perricorn/data.js'></script>-->
 
 
+<!--<script  src="{% static 'js/index.js' %}"></script>-->
 
 
-
-  </div>
-</div>  -->
-
-</div>
-<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"
-     style="background: white; border-color: rgb(0, 166, 153);"></div>
-
-</div>
-
-<!-- Go To Top Link -->
-<a href="#" class="back-to-top">
-    <i class="icon-arrow-up"></i>
-</a>
+<!--</div>-->
+<!--</div>  &ndash;&gt;-->
 
 
 <!-- Start Loader

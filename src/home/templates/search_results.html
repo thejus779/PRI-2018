@@ -65,10 +65,10 @@
                                 <ul class="dropdown-menu agile_short_dropdown">
                                     <li><a href="/profile/">My Profile</a></li>
                                     <li><a href="/posted/">Posted Item</a></li>
-                                    <li>
-                                        <button onclick=" "> log out <i class="fa fa-sign-out aria-hidden=true "> </i>
-                                        </button>
-                                    </li>
+                                    <form action="/logout/">
+
+                                          <li><button onclick="return confirm('Are you sure you want to logout?')"> log out <i class="fa fa-sign-out aria-hidden=true "> </i></button></li>
+                                    </form>
                                 </ul>
                             </li>
 
@@ -96,66 +96,115 @@
 
 
 
-    <div id="results" class="row vertical-space-top-big">
+    <!--<div id="results" class="row vertical-space-top-big">-->
+        <!--{% for p in parts %}-->
+      <!--NAME :   {{p.name}}<br>-->
+        <!--{{p.description}}<br>-->
+        <!--{{p.manufacturer}}<br>-->
+        <!--{{p.modelName}}<br>-->
+        <!--{{p.usedDuration}}<br>-->
+        <!--{% endfor %}-->
+        <!--{% for case in similar_cases %}-->
+            <!--&lt;!&ndash;{% if forloop.counter|divisibleby:3 %}<div class="row">{% endif %}&ndash;&gt;-->
+            <!--<div class="col-md-4">-->
+                <!--<div class="panel panel-primary square-corners boxShadow">-->
+                    <!--<div class="panel-heading square-corners">-->
+                        <!--<span class="resultPanelUniversity">{{ case.Manufacturer}} ({{ case.Model }})</span> <span class="pull-right badge similarityBadge">{{ case.Similarity }}</span>-->
+                    <!--</div>-->
+                    <!--<div class="panel-body">-->
 
-        {% for case in similar_cases %}
-            {% if forloop.counter|divisibleby:3 %}<div class="row">{% endif %}
-            <div class="col-md-4">
-                <div class="panel panel-primary square-corners boxShadow">
-                    <div class="panel-heading square-corners">
-                        <span class="resultPanelUniversity">{{ case.Manufacturer}} ({{ case.Model }})</span> <span class="pull-right badge similarityBadge">{{ case.Similarity }}</span>
-                    </div>
-                    <div class="panel-body">
+
+                        <!--<hr>-->
+
+                        <!--<div class="hiddenInformation1">-->
+                            <!--<div>-->
+                                <!--<p><span class="bold">Category:</span> {{ case.Category }}</p>-->
+                                <!--<p><span class="bold">Model:</span> {{ case.Model }}</p>-->
+                                <!--<p><span class="bold">City:</span> {{ case.City }}</p>-->
+                                <!--<p><span class="bold">Manufacturer:</span> {{ case.Manufacturer }}</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="hiddenInformation" id="hiddenInformation">-->
+
+                                <!--<p><span class="bold">Country:</span> {{ case.Country }}</p>-->
+                                <!--<p><span class="bold">Used Duration:</span> {{ case.UsageDuration }}</p>-->
+                                <!--<p><span class="bold">Zip Code:</span> {{ case.Zip}}</p>-->
+                                <!--<p><span class="bold">Manufactured Year:</span> {{ case.MakeYear }}</p>-->
+                                <!--&lt;!&ndash;<p><span class="bold">Image Link:</span> {{ case.Link}}</p>&ndash;&gt;-->
+
+                        <!--</div>-->
+                        <!--<br>-->
+                        <!--<div class="text-center">-->
+                            <!--<span id="expandTripChevron" style="color: #3f51b5; cursor: pointer;" class="accordion glyphicon glyphicon-chevron-down">  </span>-->
+
+                                  <!--<button class="btn btn-success boxShadow square-corners checkoutBtn btn-sm pull-left"  > More Details-->
+                <!--<span class="glyphicon glyphicon-chevron-right"></span></button>-->
 
 
-                        <hr>
+                            <!--<button class="btn btn-warning boxShadow square-corners active checkoutBtn btn-sm pull-right" onclick="productSelector.checkout()"> Exchange/Buy-->
+                <!--<span class="glyphicon glyphicon-chevron-right"></span></button>-->
 
-                        <div class="hiddenInformation1">
-                            <div>
-                                <p><span class="bold">Category:</span> {{ case.Category }}</p>
-                                <p><span class="bold">Model:</span> {{ case.Model }}</p>
-                                <p><span class="bold">City:</span> {{ case.City }}</p>
-                                <p><span class="bold">Manufacturer:</span> {{ case.Manufacturer }}</p>
-                                <p><span class="bold">Power Voltage:</span> {{ case.Power }}</p>
-                                <p><span class="bold">Price:</span> {{ case.Price }}</p>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--{% if forloop.counter|divisibleby:3 %}</div>{% endif %}-->
+        <!--{% endfor %}-->
 
+
+    <!-- /new_arrivals -->
+    <div class="new_arrivals_agile_w3ls_info">
+        <div class="container">
+            <!--<h3 class="wthree_text_info">New <span>Arrivals</span></h3>-->
+            <div id="horizontalTab">
+                <ul class="resp-tabs-list">
+                    <li> Parts </li>
+                </ul>
+                <div class="resp-tabs-container">
+                    <!--/tab_one-->
+                     {% for p in parts %}
+                    <div class="tab1">
+                        <div class="col-md-3 product-men">
+                            <div class="men-pro-item simpleCart_shelfItem">
+                                <div class="men-thumb-item">
+                                    <img src="{{ p.images.url }}" alt="" class="pro-image-front">
+                                    <img src="{{ p.images.url }}"  alt="" class="pro-image-back">
+                                    <div class="men-cart-pro">
+                                        <div class="inner-men-cart-pro">
+                                            <a href="/part/{{p.slug}}" class="link-product-add-cart">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <!--<span class="product-new-top">New</span>-->
+
+                                </div>
+                                <div class="item-info-product ">
+                                    <h4><a href="/part/{{p.slug}}">{{p.name}}</a></h4>
+                                    <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                        <!--<form action="#" method="post">-->
+                                            <fieldset>
+                                                <form action="/part/{{p.slug}}">
+                                                    {% csrf_token %}
+                                                   <input type="submit" name="submit" value="Exchange" class="button" />
+                                                </form>
+                                                <!--<submit type = submit name="Exchange" ><a  href="/part/{{p.slug}}">Exchange</a></submit>-->
+
+                                            </fieldset>
+                                        <!--</form>-->
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-
-                        <div class="hiddenInformation" id="hiddenInformation">
-                         <p>
-                                    <span class="bold">Language:</span>
-                                    {% for language in case.Language %}
-                                        {{ language }}
-                                    {% endfor %}
-                                </p>
-                                <p><span class="bold">Country:</span> {{ case.Country }}</p>
-                                <p><span class="bold">Used Duration:</span> {{ case.UsageDuration }}</p>
-                                <p><span class="bold">Zip Code:</span> {{ case.Zip}}</p>
-                                <p><span class="bold">Manufactured Year:</span> {{ case.MakeYear }}</p>
-                                <p><span class="bold">Visual Quality:</span> {{ case.VisualQuality}}</p>
-                                <p><span class="bold">Image Link:</span> {{ case.Link}}</p>
-
-                        </div>
-                        <br>
-                        <div class="text-center">
-                            <span id="expandTripChevron" style="color: #3f51b5; cursor: pointer;" class="accordion glyphicon glyphicon-chevron-down">  </span>
-
-                                  <button class="btn btn-success boxShadow square-corners checkoutBtn btn-sm pull-left"  > More Details
-                <span class="glyphicon glyphicon-chevron-right"></span></button>
+                        {% endfor %}
 
 
-                            <button class="btn btn-warning boxShadow square-corners active checkoutBtn btn-sm pull-right" onclick="productSelector.checkout()"> Exchange/Buy
-                <span class="glyphicon glyphicon-chevron-right"></span></button>
-
-                        </div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
-            {% if forloop.counter|divisibleby:3 %}</div>{% endif %}
-        {% endfor %}
-
-
+        </div>
+    </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 

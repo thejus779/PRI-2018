@@ -10,7 +10,7 @@ import json
 import requests
 from .models import Image
 from .forms import ImageForm
-from .forms import PostPartCreateForm, QueryCaseBaseForm
+from .forms import PostPartCreateForm, QueryCaseBaseForm,PartRequestCreateForm
 from .models import Parts
 from django.shortcuts import render, redirect
 from notif.forms import BuyRequest
@@ -240,11 +240,18 @@ def search_results(request):
         logging.debug('form=%s', form)
 
         if form.is_valid():
+            print('form issssss')
+            print(form)
+
+            print(form.data["drop_category"])
+
+            print('data abpce')
             logging.debug('form is valid')
 
             payload = json.dumps({
                 "Category": form.data["drop_category"],
                 "Model": form.data["drop_model"],
+                "Link": "_unknown_",
                 # "Continent": form.data["drop_continent"],
                 "Country": form.data["drop_country"],
                 "Manufacturer": form.data["drop_manufacturer"],
@@ -254,7 +261,7 @@ def search_results(request):
 
                 "Zip": form.data["drop_zip"],
                 "City": form.data["drop_city"],
-                # "UsageDuration": form.data["drop_duration"],
+                "UsageDuration": form.data["drop_duration"],
 
 
                 # "Model": "Iphone5",
@@ -277,24 +284,28 @@ def search_results(request):
                                ).json()["similarCases"]
 
             full_similar_cases = []
+            parts=[]
             # if full_similar_cases
             # Filling each case with their full information, and formatting them
             for key, value in r.items():
 
                 # Sorting out every case below 0.20 similarity
-                if value > 0.0:
+                if value > 0.70:
                     full_case = requests.get("http://localhost:8080//case?caseID=" + key).json()["case"]
                     full_case["Similarity"] = "%.3f" % value
+                    # full_similar_cases.append(full_case)
                     full_similar_cases.append(full_case)
+                    if Parts.objects.filter(id=full_case['Id']).exists():
+                        parts.append(Parts.objects.get(id=full_case['Id']))
 
             # Sorting the case list based on similarity
             sorted_full_similar_cases = sorted(full_similar_cases, key=lambda k: k['Similarity'], reverse=True)
             if sorted_full_similar_cases:
 
-                print(sorted_full_similar_cases)
+                print(full_similar_cases)
 
                 return render(request, 'search_results.html',
-                               {'form': form, 'similar_cases': sorted_full_similar_cases[:3]
+                               {'form': form, 'similar_cases': sorted_full_similar_cases[:3],'parts': parts,
                                 })
             else:
                 return redirect('home')
@@ -309,6 +320,42 @@ def no_search_section(request):
     form = QueryCaseBaseForm()
     return render(
         request,
-        'no_search_result.html',
+        'no_search_results.html',
         {"form": form}
     )
+
+@login_required(login_url='/login/')
+def register_post(request):
+
+    if request.method == 'POST':
+        form = PartRequestCreateForm(request.POST, request.FILES)
+        errors = None
+        print(form)
+        if form.is_valid():
+            if request.user.is_authenticated():
+                instance = form.save(commit=False)
+                # custoize and signals
+                #  pre save
+                instance.owner = request.user
+                instance.save()
+                # file = form.cleaned_data['image']
+                # post save
+                messages.success(request,'Request created successfully')
+                return redirect('home')
+            else:
+                return HttpResponseRedirect("/login/")
+        if form.errors:
+            errors = form.errors
+
+        template_name = 'post.html'
+        context = {"form": form, "errors": errors
+                   }
+
+        return render(request, template_name, context)
+
+    else:
+        template_name = 'request_post.html'
+        context = {
+                   }
+
+        return render(request, template_name, context)

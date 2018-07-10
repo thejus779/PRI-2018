@@ -33,6 +33,7 @@ from home.views import (
     search,
     search_results,
     no_search_section,
+    register_post,
 
 
 )
@@ -85,6 +86,7 @@ urlpatterns = [
     url(r'^search/$',search, name='search'),
     url(r'^search_results/$', search_results, name='search_results'),
     url(r'^no_search_result/$', no_search_section, name='no_search_result'),
+    url(r'^register_post/$',register_post, name='register_post'),
     # url(r'^media/(?P<path>.*)$', serve, {
         # 'document_root': settings.MEDIA_ROOT}),
 ]

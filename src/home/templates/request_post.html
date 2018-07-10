@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Post an Item</title>
+    <!--/tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+       </script>
+    <!--//tags -->
+    {% include 'snippets/css.html' %}
+</head>
+
+<body>
+    <!-- Header included from snipper -->
+    {% include 'snippets/header-bot.html' %}
+    <!-- banner -->
+    <!-- //header-bot -->
+    <!-- banner -->
+    <div class="ban-top">
+        <div class="container">
+            <div class="top_nav_left">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu__list">
+                                <li class=" menu__item"><a class="menu__link" href="/">Home <span class="sr-only">(current)</span></a></li>
+                                <li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
+                                <li class="active menu__item menu__item--current"><a class="menu__link" href="/post/">Post An Item</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="electronic.html">Electronic</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                                {% if request.user.is_authenticated %}
+                                 <li class="menu__item">
+                                    <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> Account <b class="caret"></b></a>
+                                    <ul class="dropdown-menu agile_short_dropdown">
+                                        <li><a href="/profile/">My Profile</a></li>
+                                        <li><a href="/posted/">Posted Item</a></li>
+                                        <form action="/logout/">
+
+                                          <li><button onclick="return confirm('Are you sure you want to logout?')"> log out <i class="fa fa-sign-out aria-hidden=true "> </i></button></li>
+                                        </form>
+                                    </ul>
+                                 </li>
+                                {% else %}
+                                <li class=" menu__item"><a class="menu__link" href="/login/"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
+                                <li class=" manu__item"><a class="menu__link" href="/signup/"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="top_nav_right">
+                <div class="wthreecartaits wthreecartaits2 cart cart box_1">
+                    <form action="#" method="post" class="last">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="display" value="1">
+                        <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="form-Post">
+            <h4 class="white-w3ls">Register <span>A</span> Request</h4>
+             {% if form.errors %}
+                    <!-- <ul class='form-errors'> -->
+                    <!--{% for field, errors in form.errors.items %}-->
+                        {% for error in errors %}
+                             <div style="color: #be091c">{{ error }}</div>
+                        {% endfor %}
+                    <!--{% endfor %}-->
+                    <!-- </ul> -->
+            {% endif %}
+
+
+            <form enctype="multipart/form-data" method="post" > {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" name="name" id="name" required="">
+                        <label>Part-Name</label>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <select type="select" name="category" required="" id="category">
+                        <option>Select Category</option>
+                        <option>Electronic</option>
+                        <option>Vehical</option>
+                    </select>
+                        <span></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <select type="select" name="manufacturer" id="manufacturer" required="">
+                            <optgroup label="Electronic">
+                                    <option value="">Select Manufacturer</option>
+                                <option value="Apple">Apple</option>
+                                <option value="Samsung">Samsung</option>
+                            </optgroup>
+                        </select>
+                        <span></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <select type="select" name="modelName" -placeholder="Select Model" id="modelName" required="">
+                                <optgroup label="Apple">
+                                    <option value="">Select Model</option>
+                                    <option value="Iphone5">Iphone5</option>
+                                    <option value="IphoneX">IphoneX</option>
+                                </optgroup>
+                            </select>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <select type="select" name="manufacturingYear" id="manufacturingYear" required="">
+                            <optgroup label="Manufacturer Year">
+                                <option value="0">Manufacturer Year</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                            </optgroup>
+                            <span></span>
+                    </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <select type="select" name="usedDuration" id="usedDuration" required="">
+                                <optgroup label="Used Years">
+                                    <option value="0">Duration</option>
+                                    <option value="0-1">0 - 1</option>
+                                    <option value="1-2">1 - 2</option>
+                                    <option value="2-3">2 - 3</option>
+                                    <option value="3+">3+</option>
+                                </optgroup>
+                                <span></span>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="styled-input">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    </div>
+    <!-- Footer snippet -->
+    {% include 'snippets/footer.html' %}
+<!-- post -->
+{% include 'snippets/js-login-signup.html' %}
+
+</body>
+
+</html>

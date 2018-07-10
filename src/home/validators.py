@@ -15,7 +15,7 @@ def validate_email(value):
         raise ValidationError("Not a accept edu name")
 
 
-CATEGORIES = ["Electronic","Vehical"]
+CATEGORIES = ["Electronic","Car","Laptop","Mobile","Cooking","Sports"]
 
 
 def validate_category(value):

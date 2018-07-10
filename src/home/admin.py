@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Parts
+from .models import Parts, PartsRequest
 from .models import Image
 
 
@@ -9,7 +9,12 @@ from .models import Image
 class PartsAdmin(admin.ModelAdmin):
     list_display = ['name', 'owner', 'manufacturer', 'modelName']
 
+class PartsRequestAdmin(admin.ModelAdmin):
+    list_display = ['name', 'owner', 'manufacturer', 'modelName']
+
 
 admin.site.register(Parts, PartsAdmin)
+
+admin.site.register(PartsRequest, PartsRequestAdmin)
 
 admin.site.register(Image)

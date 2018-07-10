@@ -1,9 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models.signals import pre_save
+from django.db.models.signals import pre_save,post_save
 from .validators import validate_category
 from .utils import unique_slug_generator
 from django.dispatch import receiver
+from django.core.mail import EmailMessage
 # from sorl.thumbnail import ImageField, get_thumbnail
 from django.conf import settings
 # Create your models here.
@@ -31,7 +32,7 @@ class Parts(models.Model):
     description = models.CharField(max_length=3000, blank=True, help_text='Description about the product')
     usedDuration = models.CharField(max_length=30, blank=True, help_text='Number of years the product is used')
     images = models.FileField(upload_to='images/%Y/%m/%D/', null=True, verbose_name="",blank=True)
-    is_available = models.BooleanField(default=False)
+    is_available = models.BooleanField(default=True)
 
     # email = 		models.EmailField(max_length=255, blank=True,help_text='Required. Inform a valid email address.')
     def __str__(self):
@@ -61,27 +62,63 @@ def post_pre_save_receiver(sender, instance, *args, **kwargs):
 
 pre_save.connect(post_pre_save_receiver, sender=Parts)
 
-# def rl_post_save_receiver(sender, instance, created, *args, **kwargs):
-#     print('saved')
-#     print(instance.timestamp)
-#     if not instance.slug:
-# 		instance.slug = unique_slug_generator(instance)
-# 		instance.save()
+@receiver(post_save, sender=Parts)
+def post_save_receiver(sender, instance, *args, **kwargs):
+    print('saved ')
+    toMails=[]
+    parts = PartsRequest.objects.filter(category__contains=instance.category).filter(manufacturer__contains=instance.manufacturer);
+    for p in parts:
+        toMails.append(p.owner.email)
+    print(toMails)
+    subject = 'Product' + instance.name
+    body = 'The product ' + instance.name +' by ' +instance.manufacturer +' you were looking for is available. Click this link to exchange it ' + 'http://127.0.0.1:8000/part/%s/'% (instance.slug)
+    print(body)
+    print(subject)
+    email = EmailMessage(subject, body, to=toMails)
+    print(email)
+    email.send()
 
 
-# pre_save.connect(rl_pre_save_receiver,sender=Parts)
+post_save.connect(post_save_receiver, sender=Parts)
 
-# post_save.connect(rl_post_save_receiver,sender=RestaurantLocation)
+class PartsRequest(models.Model):
+    name = models.CharField(max_length=30, blank=True, help_text='Name of your product')
+    category = models.CharField(max_length=120, null=True, blank=True,validators=[validate_category])
+    owner = models.ForeignKey(User)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    slug = models.SlugField(null=True, blank=True)
+    manufacturer = models.CharField(max_length=30, blank=True, help_text='Manufacturer name')
+    modelName = models.CharField(max_length=255, blank=True, help_text='Model name')
+    manufacturingYear = models.CharField(max_length=30, blank=True, help_text='Manufacturing year')
+    usedDuration = models.CharField(max_length=30, blank=True, help_text='Number of years the product is used')
+
+    # email = 		models.EmailField(max_length=255, blank=True,help_text='Required. Inform a valid email address.')
+    def __str__(self):
+        return self.name
+    @property
+    def title(self):
+        return self.name #objectect.title
+    class Meta:
+        verbose_name = 'Parts Request'
+        verbose_name_plural = 'Parts Requests'
+
+    # def save(self, *args, **kwargs):
+    #     if self.image:
+    #         self.image = get_thumbnail(self.image, '300x400', quality=99, format='JPEG')
+    #     super(Parts, self).save(*args, **kwargs)
 
 
-# class Continent (models.Model):
-#     name = models.CharField (max_length=100, primary_key=True)
-#
-#     def __str__(self):
-#         return self.name
-#
-#     class Meta:
-#         verbose_name_plural = 'continents'
+@receiver(pre_save, sender=PartsRequest)
+def post_pre_save_receiver(sender, instance, *args, **kwargs):
+    print('saving')
+    print(instance)
+    print(instance.timestamp)
+
+    instance.category = instance.category.upper()
+    if not instance.slug:
+        instance.slug = unique_slug_generator(instance)
+
+pre_save.connect(post_pre_save_receiver, sender=Parts)
 
 
 class Country (models.Model):

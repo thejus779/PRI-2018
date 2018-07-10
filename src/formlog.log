@@ -2732,3 +2732,1923 @@ DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
 DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts160 HTTP/1.1" 200 None
 WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /profile/assets/img/payment.png
+WARNING:django.request:Not Found: /edit/assets/img/payment.png
+WARNING:django.request:Not Found: /edit/contact.html
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts369 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts368 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts367 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts366 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts375 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts374 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts373 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts372 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts371 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts370 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts369 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts368 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts367 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts366 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts375 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts374 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts373 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts372 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts371 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts370 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts369 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts368 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts367 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts366 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts375 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts374 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts373 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts372 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts371 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts370 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts369 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts368 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts367 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts366 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts375 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts374 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts373 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts372 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts371 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts370 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts369 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts368 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts367 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts366 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts375 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts374 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts373 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts372 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts371 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts370 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view home.views.search_results didn't return an HttpResponse object. It returned None instead.
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'drop_category'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 246, in search_results
+    "Category": form.data["drop_category"],
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'drop_category'"
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts369 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts368 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts367 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts366 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts375 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts374 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts373 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts372 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts371 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts370 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /favicon.ico
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 291, in search_results
+    parts.append(Parts.objects.get(id=full_case.Id))
+AttributeError: 'dict' object has no attribute 'Id'
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 291, in search_results
+    parts.append(Parts.objects.get(id=full_case['Id']))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+home.models.DoesNotExist: Parts matching query does not exist.
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 291, in search_results
+    if Parts.objects.get(id=full_case['Id']):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+home.models.DoesNotExist: Parts matching query does not exist.
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 292, in search_results
+    parts.append(Parts.objects.get(id=full_case['Id']))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+home.models.DoesNotExist: Parts matching query does not exist.
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 301, in search_results
+    {'form': form, 'similar_cases': sorted_full_similar_cases[:3],'parts': parts,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 520, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 101: 'for'. Looking for one of: empty, endfor.
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 301, in search_results
+    {'form': form, 'similar_cases': sorted_full_similar_cases[:3],'parts': parts,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 520, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 101: 'for'. Looking for one of: empty, endfor.
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 297, in search_results
+    if Parts.objects.get(id=full_case['Id']).exists():
+AttributeError: 'Parts' object has no attribute 'exists'
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts558 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts557 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts556 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts555 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts554 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts563 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts562 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts561 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts560 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts559 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /posted/assets/img/payment.png
+WARNING:django.request:Not Found: /posted/assets/img/payment.png
+WARNING:django.request:Not Found: /posted/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts613 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts610 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts608 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts612 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts611 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts609 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts607 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts606 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts605 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts604 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts608 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts613 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts610 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts609 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts606 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts604 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts612 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts611 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts607 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts605 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts608 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts613 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts610 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts609 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts606 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts604 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts612 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts611 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts607 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts605 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts608 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts613 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts610 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts609 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts606 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts604 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts612 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts611 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts607 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts605 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts608 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts613 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts610 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts608 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts613 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts610 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png

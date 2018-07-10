@@ -227,7 +227,7 @@ defaultOption.text = 'Select Manufacturer';
 dropdown.add(defaultOption);
 dropdown.selectedIndex = 10;
 
-const url = 'https://api.myjson.com/bins/1b2422';
+const url = 'https://api.myjson.com/bins/c9xcq';
 
 fetch(url)
   .then(
@@ -237,8 +237,6 @@ fetch(url)
           response.status);
         return;
       }
-
-
 
       // Examine the text in the response
       response.json().then(function(data) {
@@ -278,7 +276,7 @@ defaultOption1.text = 'Select Model';
 dropdown1.add(defaultOption1);
 dropdown1.selectedIndex = 12;
 
-const url_1 = 'https://api.myjson.com/bins/1b2422';
+const url_1 = 'https://api.myjson.com/bins/c9xcq';
 
 fetch(url_1)
   .then(
@@ -330,7 +328,7 @@ defaultOption2.text = 'Select Manufactured Year';
 dropdown2.add(defaultOption2);
 dropdown2.selectedIndex = 10;
 
-const url_2 = 'https://api.myjson.com/bins/1b2422';
+const url_2 = 'https://api.myjson.com/bins/c9xcq';
 
 fetch(url_2)
   .then(
@@ -382,7 +380,7 @@ defaultOption3.text = 'Select Zip';
 dropdown3.add(defaultOption3);
 dropdown3.selectedIndex = 18;
 
-const url_3 = 'https://api.myjson.com/bins/1b2422';
+const url_3 = 'https://api.myjson.com/bins/c9xcq';
 
 fetch(url_3)
   .then(
@@ -434,7 +432,7 @@ defaultOption4.text = 'Select Category';
 dropdown4.add(defaultOption4);
 dropdown4.selectedIndex = 2;
 
-const url_4 = 'https://api.myjson.com/bins/1b2422';
+const url_4 = 'https://api.myjson.com/bins/c9xcq';
 
 fetch(url_4)
   .then(
@@ -590,7 +588,7 @@ defaultOption7.text = 'Usage Duration';
 dropdown7.add(defaultOption7);
 dropdown7.selectedIndex = 17;
 
-const url_7 = 'https://api.myjson.com/bins/1b2422';
+const url_7 = 'https://api.myjson.com/bins/c9xcq';
 
 fetch(url_7)
   .then(
@@ -642,7 +640,7 @@ defaultOption8.text = 'Select Country';
 dropdown8.add(defaultOption8);
 dropdown8.selectedIndex = 7;
 
-const url_8 = 'https://api.myjson.com/bins/1b2422';
+const url_8 = 'https://api.myjson.com/bins/c9xcq';
 
 fetch(url_8)
   .then(
@@ -693,7 +691,7 @@ defaultOption9.text = 'Select City';
 
 dropdown9.add(defaultOption9);
 dropdown9.selectedIndex = 4;
-const url_9 = 'https://api.myjson.com/bins/19mgrv';
+const url_9 = 'https://api.myjson.com/bins/c9xcq';
 
 fetch(url_9)
   .then(

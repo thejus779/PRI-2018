@@ -1,6 +1,6 @@
 from django import forms
 from .models import Image
-from .models import Parts
+from .models import Parts, PartsRequest
 from .models import Query
 from django.forms.widgets import NumberInput
 # from .validators import validate_category
@@ -19,6 +19,18 @@ class PostPartCreateForm(forms.ModelForm):
             'usedDuration',
             'description',
             'images',
+        ]
+class PartRequestCreateForm(forms.ModelForm):
+
+    class Meta:
+        model = PartsRequest
+        fields = [
+            'name',
+            'category',
+            'manufacturer',
+            'modelName',
+            'manufacturingYear',
+            'usedDuration',
         ]
 
 class ImageForm(forms.ModelForm):
