@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Posted Item By User </title>
+    <title> Search </title>
     <!--/tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,10 +55,10 @@
                         <ul class="nav navbar-nav menu__list">
                             <li class=" menu__item"><a class="menu__link" href="/">Home <span
                                     class="sr-only">(current)</span></a></li>
-                            <li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
                             <li class=" menu__item"><a class="menu__link" href="/post">Po/st An Item</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="Electronic.html">Electronic</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="/about/">About</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="/contact/">Contact</a></li>
+
                             {% if request.user.is_authenticated %}
                             <li class="menu__item">
                                 <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown"><i

@@ -1817,6 +1817,22 @@ style.css
         font-weight: 600;
     }
 
+    .snipcart-details a.button {
+        font-size: 13px;
+        color: #fff;
+        background: #2fdab8;
+        text-decoration: none;
+        position: relative;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        text-transform: uppercase;
+        padding: .5em 0;
+        outline: none;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
     .agile_top_brand_left_grid:hover .snipcart-details input.button,
     .snipcart-details input.button:hover {
         background: #2fdab8;
@@ -1965,6 +1981,10 @@ style.css
         height: 280px;
     }
 
+    .men-thumb-item1 {
+        position: relative;
+        height: 20px;
+    }
     .item-info-product {
         text-align: center;
         margin: 20px 0 0;
@@ -1983,12 +2003,34 @@ style.css
         transition: all 0.5s ease-out 0s;
     }
 
+     .men-thumb-item1::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        opacity: 0;
+        z-index: 9;
+        visibility: hidden;
+        transition: all 0.5s ease-out 0s;
+    }
+
+    .men-thumb-item1 .pro-image-front {
+        opacity: 1;
+        visibility: visible;
+    }
+
     .men-thumb-item .pro-image-front {
         opacity: 1;
         visibility: visible;
     }
 
     .men-thumb-item img {
+        transition: all 0.5s ease-out 0s;
+    }
+
+     .men-thumb-item1 img {
         transition: all 0.5s ease-out 0s;
     }
 
@@ -2135,6 +2177,9 @@ style.css
     .men-thumb-item1 img {
         transition: all 0.5s ease-out 0s;
         padding: 10px 10px 10px;
+        max-width: 100%;
+        max-height: 100%;
+        height: 200px;
     }
 
     .men-thumb-item:hover .men-cart-pro {
@@ -2533,7 +2578,7 @@ style.css
     }
 
     .page-head_agile_info_w3l h3 {
-        color: #fff;
+        color: #000000;
         text-align: center;
         text-transform: uppercase;
         font-size: 3em;
@@ -2576,15 +2621,19 @@ style.css
 
     .agile_ab_w3ls_info {
         margin-bottom: 3em;
+
     }
 
     .agile_ab_w3ls_info h5 {
+
         text-transform: uppercase;
         font-size: 2em;
         color: #212121;
         letter-spacing: 2px;
         font-weight: 700;
         margin-bottom: 1.5em;
+        margin-top: 20px;
+        text-align: center;
     }
 
     .agile_ab_w3ls_info h5 span {
@@ -2595,6 +2644,7 @@ style.css
         margin: 1em 0 2em;
         color: #545454;
         line-height: 2em;
+        text-align: center;
     }
     /*--//about--*/
     /*-- /contact --*/
@@ -4162,6 +4212,7 @@ style.css
         color: #fff;
     }
 
+
     .single-right-left del {
         color: #999;
         margin-left: 10px;
@@ -4188,7 +4239,20 @@ style.css
         font-weight: 300;
     }
 
-    .single-right-left input[type="submit"] {
+
+    .single-right-left a{
+        border: none;
+        padding: 0.8em 2.5em;
+        font-size: 15px;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        background: #2fdab8;
+        color: #fff;
+    }
+
+    .single-right-left input[type="submit"]{
         border: none;
         padding: 0.8em 2.5em;
         font-size: 15px;
@@ -4509,6 +4573,46 @@ style.css
     }
     /*-- //to-top --*/
     /*-- responsive media queries --*/
+     @media (max-width: 2080px) {
+        .multi-gd-img.multi-gd-text h4 {
+            position: absolute;
+            top: 47%;
+            left: 30%;
+            font-size: 2em;
+        }
+        .header-middle form input[type="submit"] {
+            background: url(../images/search.png) no-repeat 90% 0px #2fdab8;
+            font-size: 17px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            border: none;
+            border-radius: 0;
+            width: 100%;
+            text-transform: uppercase;
+            padding: .5em 0;
+            outline: none;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .w3ls_schedule_bottom_right_grid {
+            padding: 3em 2em;
+            margin: 5em 0 0;
+            width: 90%;
+        }
+        .logo_agile h1 a {
+            letter-spacing: 1px;
+            font-size: 1.4em;
+        }
+        i.fa.fa-shopping-bag.top_logo_agile_bag {
+            position: absolute;
+            font-size: 17px;
+            top: 61px;
+            right: 13px;
+        }
+    }
+
+
 
     @media (max-width: 1440px) {
         .multi-gd-img.multi-gd-text h4 {
@@ -4516,6 +4620,21 @@ style.css
             top: 47%;
             left: 30%;
             font-size: 2em;
+        }
+        .header-middle form input[type="submit"] {
+            background: url(../images/search.png) no-repeat 90% 0px #2fdab8;
+            font-size: 17px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            border: none;
+            border-radius: 0;
+            width: 100%;
+            text-transform: uppercase;
+            padding: .5em 0;
+            outline: none;
+            letter-spacing: 1px;
+            font-weight: 600;
         }
         .w3ls_schedule_bottom_right_grid {
             padding: 3em 2em;

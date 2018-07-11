@@ -4852,3 +4852,403 @@ Traceback (most recent call last):
   File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 571, in invalid_block_tag
     "or load this tag?" % (token.lineno, command)
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 81: 'inclide'. Did you forget to register or load this tag?
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /post/
+ERROR:django.request:Internal Server Error: /post/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 54, in create_parts
+    return render(request, template_name, context)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/defaulttags.py", line 969, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 121: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR:django.request:Internal Server Error: /post/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 54, in create_parts
+    return render(request, template_name, context)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/defaulttags.py", line 969, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 121: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR:django.request:Internal Server Error: /post/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 54, in create_parts
+    return render(request, template_name, context)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/defaulttags.py", line 969, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 121: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /contact/assets/img/payment.png
+WARNING:django.request:Not Found: /about/assets/img/payment.png
+WARNING:django.request:Not Found: /about/assets/img/payment.png
+WARNING:django.request:Not Found: /contact/assets/img/payment.png
+WARNING:django.request:Not Found: /contact/assets/img/payment.png
+WARNING:django.request:Not Found: /about/assets/img/payment.png
+WARNING:django.request:Not Found: /about/assets/img/payment.png
+WARNING:django.request:Not Found: /contact/assets/img/payment.png
+WARNING:django.request:Not Found: /about/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 152, in get_all_products
+    queryset = Parts.objects.filter(~Q(owner=request.user))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1270, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1179, in build_filter
+    self.check_related_objects(field, value, opts)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1078, in check_related_objects
+    for v in value:
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/utils/functional.py", line 239, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts607 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts612 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts606 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view home.views.search_results didn't return an HttpResponse object. It returned None instead.
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+ERROR:django.request:Internal Server Error: /register_post/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 341, in register_post
+    instance.save()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/db/models/base.py", line 833, in save_base
+    update_fields=update_fields,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/shine/Desktop/PRI-2018/src/home/models.py", line 117, in post_pre_save_receiver
+    instance.category = instance.category.upper()
+AttributeError: 'NoneType' object has no attribute 'upper'
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png

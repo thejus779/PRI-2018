@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Single</title>
+    <title>Details :: Exchange {{ part.name }}</title>
     <!--/tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -54,10 +54,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <ul class="nav navbar-nav menu__list">
                             <li class="active menu__item menu__item--current"><a class="menu__link" href="/">Home <span
                                     class="sr-only">(current)</span></a></li>
-                            <li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
                             <li class=" menu__item"><a class="menu__link" href="/post/">Post An Item</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="Electronic.html">Electronic</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="/about/">About</a></li>
+                                <li class=" menu__item"><a class="menu__link" href="/contact/">Contact</a></li>
+
                             {% if request.user.is_authenticated %}
                             <li class="menu__item">
                                 <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown"><i
@@ -172,7 +172,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <input type="submit" name="edit" value="Edit" class="button">
                     </form>
 
-                    <form class="col-md-2" action="/delete/{{p.id}}/" method="post" class="button">
+                    <form class="col-md-2" action="/delete/{{p.id}}/" style="margin-left: 30px;" method="post" class="button">
                         <input type="submit" name="delete" value="Delete" class="button">
                     </form>
             </div>
@@ -202,9 +202,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             {% else %}
             <!--<form method="POST">-->
             <!--{% csrf_token %}-->
-            <input type="submit" name="login" value="Login To Exchange" class="button">
-            <a href="{% url 'login' %}?next={{request.path}}">Login</a>
+            <div class="styled-input">
+
+            <a class="button" style="margin-top: 20px;" href="{% url 'login' %}?next={{request.path}}">Login</a>
             <!--</form>-->
+            </div>
             {% endif %}
 
             {% endifequal %}

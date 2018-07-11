@@ -147,10 +147,11 @@ def display_buy_part(request,slug):
 
 
 def get_all_products(request):
-
     template_name = 'index.html'
-    queryset = Parts.objects.filter(~Q(owner=request.user))
-
+    if request.user.is_authenticated:
+        queryset = Parts.objects.filter(~Q(owner=request.user))
+    else:
+        queryset = Parts.objects.all()
     context = {"parts": queryset}
     print(context)
 
@@ -198,11 +199,10 @@ def update_part(request,slug):
                 part.save()
                 # user_profile.save()
                 print(part.description)
-                print("sdasdsadsa")
                 messages.success(request, 'Your part was successfully updated!')
-                return redirect('posted')
+                return HttpResponseRedirect(request.path_info)
         else:
-            messages.error(request, 'Please correct the error below.')
+            # messages.error(request, 'Update failed, try again.')
             return render(request, 'updatepost.html', {'form':form})
 
 
@@ -291,7 +291,7 @@ def search_results(request):
             for key, value in r.items():
 
                 # Sorting out every case below 0.20 similarity
-                if value > 0.70:
+                if value > 0.80:
                     full_case = requests.get("http://localhost:8080//case?caseID=" + key).json()["case"]
                     full_case["Similarity"] = "%.3f" % value
                     # full_similar_cases.append(full_case)
@@ -309,7 +309,7 @@ def search_results(request):
                                {'form': form, 'similar_cases': sorted_full_similar_cases[:3],'parts': parts,
                                 })
             else:
-                return redirect('home')
+                return redirect('no_search_result')
         else:
             print("Form error")
             form = QueryCaseBaseForm()
@@ -341,8 +341,8 @@ def register_post(request):
                 instance.save()
                 # file = form.cleaned_data['image']
                 # post save
-                messages.success(request,'Request created successfully')
-                return redirect('home')
+                messages.success(request,'We will notify you when the part is available.')
+                return redirect('register_post')
             else:
                 return HttpResponseRedirect("/login/")
         if form.errors:

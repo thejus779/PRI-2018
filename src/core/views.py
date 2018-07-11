@@ -47,6 +47,7 @@ def signup(request):
             user = authenticate(username=username, password=raw_password)
             if user:
                 login(request, user)
+                messages.success(request, 'Welcome to X-Spare. Exchange Reuse Sustain!')
                 return redirect('home')# Redirect to a success page.
     else:
         form = SignUpForm()
@@ -94,7 +95,7 @@ def display_profile(request):
 @login_required
 # @transaction.atomic
 def update_profile(request):
-
+    user_profile = Profile.objects.get(user=request.user)
     if request.method == 'POST':
 
         user_form = UpdateUpForm(request.POST, instance=request.user)
@@ -109,32 +110,28 @@ def update_profile(request):
             user_profile.address = user_form.cleaned_data.get('address')
             user_profile.country = user_form.cleaned_data.get('country')
             user_profile.mobilenumber = user_form.cleaned_data.get('mobilenumber')
-            user.email = user_form.cleaned_data.get('email')
-            user.username = user_form.cleaned_data.get('username')
+
             print(user.username)
-            print(user_form.cleaned_data.get('username'))
-            if User.objects.filter(username=user_form.cleaned_data.get('username')).exists():
-                messages.error("Username already exists")
-                # raise forms.ValidationError(u'Username "%s" is not available.' % newusername)
-            else:
-                if User.objects.filter(username=user_form.cleaned_data.get('email')).exists():
-                    messages.error("Username already exists")
-                else:
-                    user.username = user_form.cleaned_data.get('username')
-                    user.email = user_form.cleaned_data.get('email')
-                    user.save()
-                    user_profile.save()
-                    messages.success(request, 'Your profile was successfully updated!')
+            print(user_form.cleaned_data.get('email'))
+            print(user.email)
+
+            # if User.objects.filter(email=user_form.cleaned_data.get('email')).exists() and user.email != user_form.cleaned_data.get('email'):
+            #     messages.error(request,"Update failed!! Email already exists")
+            #     # return redirect('')
+            # else:
+            user.email = user_form.cleaned_data.get('email')
+            user.save()
+            user_profile.save()
+            messages.success(request, 'Your profile was successfully updated!')
 
             return redirect('profile')
         else:
-            messages.error(request, 'Please correct the error below.')
+            # messages.error(request, 'Please correct the error below.')
             return render(request, 'editProfile.html', {'form':user_form})
-
 
     else:
         template_name = 'editProfile.html'
-        user_profile = Profile.objects.get(user=request.user)
+
         context = {'user': user_profile}
         print(context)
         return render(request, template_name, context)
@@ -200,10 +197,10 @@ def delte_user_part(request,id):
     try:
         if request.method == 'POST':
             part.delete()
-            messages.success(request, "Successfully deleted")
+            messages.success(request, "Part successfully deleted")
 
     except Exception as e:
-        messages.warning(request, "Exception in deleted")
+        messages.warning(request, "Deletion failed")
 
     parts = Parts.objects.filter(owner=request.user)
     context = {'parts': parts}
