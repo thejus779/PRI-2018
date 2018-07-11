@@ -4,10 +4,16 @@
 	<title>Test SIgnup</title>
 </head>
 	<body>
+<!-- Header included from snipper -->
+{% include 'snippets/header-bot.html' %}
 		
 			
 		{% block content %}   {% endblock %}
 		
 	
-	</body>
+	<!-- Footer snippet -->
+{% include 'snippets/footer.html' %}
+<!-- post -->
+{% include 'snippets/js-login-signup.html' %}
+</body>
 </html>

@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.static import serve
 from django.views.generic import TemplateView
-from django.contrib.auth.views import LoginView
+# from django.contrib.auth.views import LoginView
 from django.contrib.auth import views as auth_views
 from core.forms import CustomAuthenticationForm
 from home.views import (
@@ -36,6 +36,7 @@ from home.views import (
     register_post,
 
 
+
 )
 from core.views import (
     signup,
@@ -44,6 +45,8 @@ from core.views import (
     user_profile,
     logout_view,
     delte_user_part,
+    MyLoginView,
+    activate,
 
     # display_profile,
     # DisplayProfile,
@@ -63,7 +66,8 @@ urlpatterns = [
     # url(r'^login/$', LoginView.as_view(template_name='login.html'),name='login'),
     # url(r'^signup/$', TemplateView.as_view(template_name='signup.html'),name='signup'),
     # url(r'^login/$', login_view, name='login'),
-    url(r'^login/$', LoginView.as_view(), name='login'),
+    # url(r'^login/$', LoginView.as_view(), name='login'),
+    url(r'^login/$', MyLoginView.as_view(template_name='login.html'), name='login'),
     url(r'^view3/$', TemplateView.as_view(template_name='view3.html')),
     url(r'^update/(?P<slug>[\w-]+)/$', update_part),
     url(r'^$', get_all_products, name='home'),
@@ -86,6 +90,13 @@ urlpatterns = [
     url(r'^search_results/$', search_results, name='search_results'),
     url(r'^no_search_result/$', no_search_section, name='no_search_result'),
     url(r'^register_post/$',register_post, name='register_post'),
+    url(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
+        activate, name='activate'),
+    url(r'^password_reset/$', auth_views.password_reset, name='password_reset'),
+    url(r'^password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),
+    url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
+        auth_views.password_reset_confirm, name='password_reset_confirm'),
+    url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'),
     # url(r'^media/(?P<path>.*)$', serve, {
         # 'document_root': settings.MEDIA_ROOT}),
 ]

@@ -5252,3 +5252,6 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'upper'
 WARNING:django.request:Not Found: /filter/assets/img/payment.png
 WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /register_post/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
