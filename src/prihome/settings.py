@@ -24,7 +24,8 @@ EMAIL_HOST_USER = 'advancedphp779@gmail.com'
 EMAIL_HOST_PASSWORD = 'Epita@123'
 EMAIL_PORT = 587
 
-
+from django.contrib.messages import constants as message_constants
+MESSAGE_LEVEL = message_constants.DEBUG
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 

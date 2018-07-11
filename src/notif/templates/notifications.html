@@ -50,18 +50,30 @@
                                 <li class=" menu__item"><a class="menu__link" href="Electronic.html">Electronic</a></li>
                                 <li class=" menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
                                 {% if request.user.is_authenticated %}
-                                 <li class="active menu__item menu__item--current dropdown">
-                                    <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> Account <b class="caret"></b></a>
-                                    <ul class="dropdown-menu agile_short_dropdown">
-                                        <li><a href="/profile/">My Profile</a></li>
-                                        <li><a href="/posted/">Posted Item</a></li>
-                                        <li><button onclick=" "> log out <i class="fa fa-sign-out aria-hidden=true "> </i></button></li>
-                                    </ul>
-                                 </li>
-                                {% else %}
-                                <li class=" menu__item"><a class="menu__link" href="/login/"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
-                                <li class=" manu__item"><a class="menu__link" href="/signup/"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
-                                {% endif %}
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                        class="fa fa-user" aria-hidden="true"></i> Account <b class="caret"></b></a>
+                                <ul class="dropdown-menu agile_short_dropdown">
+                                    <li><a href="/profile/">My Profile</a></li>
+                                    <li><a href="/posted/">Posted Item</a></li>
+                                    <form action="/logout/">
+
+                                        <li>
+                                            <button onclick="return confirm('Are you sure you want to logout?')"> log
+                                                out <i class="fa fa-sign-out aria-hidden=true "> </i></button>
+                                        </li>
+                                    </form>
+
+                                    <!--<li><form action="/logout/"><i class="fa fa-sign-out aria-hidden=true "></i>i><input type="submit" value="Go to Google" /></form></li>-->
+                                </ul>
+                            </li>
+                            {% else %}
+                            <li class=" menu__item"><a class="menu__link" href="/login/"><i class="fa fa-unlock-alt"
+                                                                                            aria-hidden="true"></i> Sign
+                                In </a></li>
+                            <li class=" manu__item"><a class="menu__link" href="/signup/"><i
+                                    class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
+                            {% endif %}
 
                             </ul>
                         </div>
@@ -69,7 +81,7 @@
                 </nav>
             </div>
 
-            {% include 'snippets/shopping-cart.html' %}
+            {% include 'snippets/notificationheader.html' %}
             <div class="clearfix"></div>
         </div>
     </div>
@@ -81,7 +93,7 @@
 
                 {% for n in notifications %}
 
-                    <a href="/reply/{{n.buyer_id}}">
+                    <a href="/reply/{{n.id}}">
                         <p class="notification"> {{n.buyer_name}} {{n.message}} {{n.part_name}}.</p>
                     </a>
 

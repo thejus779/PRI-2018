@@ -40,7 +40,6 @@ from home.views import (
 from core.views import (
     signup,
     update_profile,
-    login_view,
     user_parts,
     user_profile,
     logout_view,
@@ -69,7 +68,7 @@ urlpatterns = [
     url(r'^update/(?P<slug>[\w-]+)/$', update_part),
     url(r'^$', get_all_products, name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='about.html')),
-    url(r'^post/$', create_parts),
+    url(r'^post/$', create_parts,name='post'),
     url(r'^contact/$', TemplateView.as_view(template_name='contact.html')),
     url(r'^details/$', TemplateView.as_view(template_name='details.html')),
     url(r'^posted/$', user_parts,name='posted'),

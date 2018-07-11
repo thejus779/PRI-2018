@@ -27,13 +27,14 @@ def create_parts(request):
         if form.is_valid():
             if request.user.is_authenticated():
                 instance = form.save(commit=False)
-                # custoize and signals
+                # customize and signals
                 #  pre save
                 instance.owner = request.user
                 instance.save()
                 # file = form.cleaned_data['image']
                 # post save
-                return redirect('home')
+                messages.success(request, 'Post created successfully')
+                return redirect('post')
             else:
                 return HttpResponseRedirect("/login/")
         if form.errors:

@@ -138,24 +138,25 @@ def update_profile(request):
         context = {'user': user_profile}
         print(context)
         return render(request, template_name, context)
+#
+# class MyLoginView(LoginView):
+#     success_url = 'index.html'
+#     form_class = LoginForm()
+#     template_name = 'login.html'
+#
 
-class MyLoginView(LoginView):
-    success_url = 'index.html'
-    form_class = LoginForm()
-    template_name = 'login.html'
-
-
-
-
-
-def login_view(request):
-    form = LoginForm(request.POST or None)
-    if request.POST and form.is_valid():
-        user = form.login(request)
-        if user:
-            login(request, user)
-            return redirect('home')# Redirect to a success page.
-    return render_to_response('login.html', {'login_form': form },  RequestContext(request))
+#
+#
+#
+# def login_view(request):
+#     form = LoginForm(request.POST or None)
+#     if request.POST and form.is_valid():
+#         user = form.login(request)
+#         if user:
+#             login(request, user)
+#             messages.info(request, 'Login successfull!')
+#             return redirect('home')# Redirect to a success page.
+#     return render_to_response('login.html', {'login_form': form },  RequestContext(request))
 
 
 def user_parts(request):

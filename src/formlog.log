@@ -4652,3 +4652,203 @@ DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
 DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts610 HTTP/1.1" 200 None
 WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts613 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts612 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts611 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /search_results/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'inclide'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 309, in search_results
+    {'form': form, 'similar_cases': sorted_full_similar_cases[:3],'parts': parts,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 93: 'inclide'. Did you forget to register or load this tag?
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts609 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /part/pressure-cooker/assets/img/payment.png
+WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
+ERROR:django.request:Internal Server Error: /register_post/
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'inclide'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/shine/Desktop/PRI-2018/src/home/views.py", line 362, in register_post
+    return render(request, template_name, context)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/shine/Desktop/PRI-2018/lib/python3.6/site-packages/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 81: 'inclide'. Did you forget to register or load this tag?
