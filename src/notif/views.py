@@ -49,7 +49,7 @@ def reply_select(request, id):
                     notif.save()
                     part.save()
                     print('success save valid')
-                    messages.success(request, 'Request accepted')
+                    messages.success(request, 'Success! Your details have been forwarded.')
                     return redirect('home')
             if form.errors:
                 errors = form.errors
