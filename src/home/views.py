@@ -47,8 +47,9 @@ def create_parts(request):
         return render(request, template_name, context)
 
     else:
+        profile = Profile.objects.get(user=request.user)
         template_name = 'post.html'
-        context = {
+        context = {'profile': profile
                    }
 
         return render(request, template_name, context)
@@ -357,7 +358,8 @@ def register_post(request):
 
     else:
         template_name = 'request_post.html'
-        context = {
+        profile = Profile.objects.get(user=request.user)
+        context = {'profile': profile
                    }
 
         return render(request, template_name, context)

@@ -19,6 +19,9 @@ class PostPartCreateForm(forms.ModelForm):
             'usedDuration',
             'description',
             'images',
+            'city',
+            'country',
+            'zipcode',
         ]
 
 class PartRequestCreateForm(forms.ModelForm):
@@ -32,6 +35,9 @@ class PartRequestCreateForm(forms.ModelForm):
             'modelName',
             'manufacturingYear',
             'usedDuration',
+            'city',
+            'country',
+            'zipcode',
         ]
 
 class ContactCreateForm(forms.ModelForm):

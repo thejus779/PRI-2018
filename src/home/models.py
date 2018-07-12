@@ -31,6 +31,9 @@ class Parts(models.Model):
     manufacturingYear = models.CharField(max_length=30, blank=True, help_text='Manufacturing year')
     description = models.CharField(max_length=3000, blank=True, help_text='Description about the product')
     usedDuration = models.CharField(max_length=30, blank=True, help_text='Number of years the product is used')
+    city = models.CharField(max_length=30, blank=True, help_text='City where the product is',default='Paris')
+    country = models.CharField(max_length=3000, blank=True, help_text='Country where product is',default='France')
+    zipcode = models.CharField(max_length=30, blank=True, help_text='Zip Code of where product is',default='75001')
     images = models.FileField(upload_to='images/%Y/%m/%D/', null=True, verbose_name="",blank=True)
     is_available = models.BooleanField(default=True)
 
@@ -91,6 +94,9 @@ class PartsRequest(models.Model):
     modelName = models.CharField(max_length=255, blank=True, help_text='Model name')
     manufacturingYear = models.CharField(max_length=30, blank=True, help_text='Manufacturing year')
     usedDuration = models.CharField(max_length=30, blank=True, help_text='Number of years the product is used')
+    city = models.CharField(max_length=30, blank=True, help_text='City where the product is')
+    country = models.CharField(max_length=3000, blank=True, help_text='Country where product is')
+    zipcode = models.CharField(max_length=30, blank=True, help_text='Zip Code of where product is')
 
     # email = 		models.EmailField(max_length=255, blank=True,help_text='Required. Inform a valid email address.')
     def __str__(self):

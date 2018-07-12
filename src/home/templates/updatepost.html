@@ -16,6 +16,7 @@
             window.scrollTo(0, 1);
         }
 
+
     </script>
     <!--//tags -->
     {% include 'snippets/css.html' %}
@@ -57,7 +58,7 @@
                                 <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown"><i
                                         class="fa fa-user" aria-hidden="true"></i> Account <b class="caret"></b></a>
                                 <ul class="dropdown-menu agile_short_dropdown">
-                                   {% include 'snippets/account_dropdown.html' %}
+                                    {% include 'snippets/account_dropdown.html' %}
 
                                     <!--<li><form action="/logout/"><i class="fa fa-sign-out aria-hidden=true "></i>i><input type="submit" value="Go to Google" /></form></li>-->
                                 </ul>
@@ -137,59 +138,69 @@
                     <select type="select" name="category" required="" id="category">
                         <option>{{part.category}}</option>
                         <option>Electronic</option>
-                        <option>Vehical</option>
+                        <option>Car</option>
+                        <option>Laptop</option>
+                        <option>Mobile</option>
+                        <option>Cooking</option>
+                        <option>Sports</option>
+                        <option>Others</option>
                     </select>
                     <span></span>
                 </div>
-
                 <div class="col-md-4">
-                    <select type="select" name="manufacturer" id="manufacturer" required="">
-                        <!--<optgroup label="Electronic">-->
-                        <option value="{{part.manufacturer}}">{{part.manufacturer}}</option>
-                        <option value="Apple">Apple</option>
-                        <option value="Samsung">Samsung</option>
-                        <!--</optgroup>-->
-                    </select>
+                    <input type="text" name="manufacturer" id="manufacturer" required="" value="{{part.manufacturer}}">
+                    <label>Manufacturer</label>
+                    <!--<optgroup label="Electronic">-->
+                    <!--<option value="">Select Manufacturer</option>-->
+                    <!--<option value="Apple">Apple</option>-->
+                    <!--<option value="Samsung">Samsung</option>-->
+                    <!--</optgroup>-->
+                    </input>
                     <span></span>
                 </div>
-
                 <div class="col-md-4">
-                    <select type="select" name="modelName" -placeholder="Select Model" id="modelName" required="">
-                        <optgroup label="Apple">
-                            <option value="{{part.modelName}}">{{part.modelName}}</option>
-                            <option value="Iphone5">Iphone5</option>
-                            <option value="IphoneX">IphoneX</option>
-                        </optgroup>
-                    </select>
+                    <input type="text" name="modelName" -placeholder="Select Model" id="modelName" required=""
+                           value="{{part.modelName}}">
+                    <label>Model Number</label>
+                    <!--<optgroup label="Apple">-->
+                    <!--<option value="">Select Model</option>-->
+                    <!--<option value="Iphone5">Iphone5</option>-->
+                    <!--<option value="IphoneX">IphoneX</option>-->
+                    <!--</optgroup>-->
+
                     <span></span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <select type="select" name="manufacturingYear" id="manufacturingYear" required="">
-                        <optgroup label="Manufacturer Year">
-                            <option value="{{part.manufacturingYear}}">{{part.manufacturingYear}}</option>
-                            <option value="2012">2012</option>
-                            <option value="2013">2013</option>
-                            <option value="2014">2014</option>
-                            <option value="2015">2015</option>
-                        </optgroup>
-                        <span></span>
-                    </select>
+                    <input type="number" name="manufacturingYear" id="manufacturingYear" required=""
+                           value="{{part.manufacturingYear}}">
+                    <label>Manufacturing Year</label>
+                    <!--<optgroup label="Manufacturer Year">-->
+                    <!--<option value="0">Manufacturer Year</option>-->
+                    <!--<option value="2012">2012</option>-->
+                    <!--<option value="2013">2013</option>-->
+                    <!--<option value="2014">2014</option>-->
+                    <!--<option value="2015">2015</option>-->
+                    <!--</optgroup>-->
+                    <span></span>
+
+                </div>
+                <div class="col-md-4">
+                    <input type="number" name="usedDuration" id="usedDuration" required=""
+                           value="{{part.usedDuration}}">
+                    <label>Used Duration</label>
+                    <!--<optgroup label="Manufacturer Year">-->
+                    <!--<option value="0">Manufacturer Year</option>-->
+                    <!--<option value="2012">2012</option>-->
+                    <!--<option value="2013">2013</option>-->
+                    <!--<option value="2014">2014</option>-->
+                    <!--<option value="2015">2015</option>-->
+                    <!--</optgroup>-->
+                    <span></span>
+
                 </div>
 
-                <div class="col-md-3">
-                    <select type="select" name="usedDuration" id="usedDuration" required="">
-                        <optgroup label="Used Years">
-                            <option value="{{part.usedDuration}}">{{part.usedDuration}}</option>
-                            <option value="0-1">0 - 1</option>
-                            <option value="1-2">1 - 2</option>
-                            <option value="2-3">2 - 3</option>
-                            <option value="3+">3+</option>
-                        </optgroup>
-                        <span></span>
-                    </select>
-                </div>
             </div>
             <!--<div class="row">-->
             <!--<div class="col-md-4">-->
@@ -216,6 +227,7 @@
                 <label>Details</label>
                 <span></span>
             </div>
+
             <div class="styled-input">
                 <input type="file" name="images" placeholder="Images" multiple="multiple" value="">
                 <span></span>
@@ -231,6 +243,9 @@
             <!--</div>-->
             <!--</div>-->
             <!--{% endfor %}-->
+            <input type="hidden" name="city" value={{part.city}}>
+            <input type="hidden" name="country" value={{part.country}}>
+            <input type="hidden" name="zipcode" value={{part.postalcode}}>
             <div class="styled-input">
                 <input type="submit" value="Submit">
             </div>
