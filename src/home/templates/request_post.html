@@ -139,61 +139,68 @@
                     <select type="select" name="category" required="" id="category">
                         <option>Select Category</option>
                         <option>Electronic</option>
-                        <option>Vehical</option>
+                        <option>Car</option>
+                        <option>Laptop</option>
+                        <option>Mobile</option>
+                        <option>Cooking</option>
+                        <option>Sports</option>
+                        <option>Others</option>
                     </select>
                     <span></span>
                 </div>
 
                 <div class="col-md-4">
-                    <select type="select" name="manufacturer" id="manufacturer" required="">
-                        <optgroup label="Electronic">
-                            <option value="">Select Manufacturer</option>
-                            <option value="Apple">Apple</option>
-                            <option value="Samsung">Samsung</option>
-                        </optgroup>
-                    </select>
+                    <input type="text" name="manufacturer" id="manufacturer" required="">
+                    <label>Manufacturer</label>
+                        <!--<optgroup label="Electronic">-->
+                            <!--<option value="">Select Manufacturer</option>-->
+                            <!--<option value="Apple">Apple</option>-->
+                            <!--<option value="Samsung">Samsung</option>-->
+                        <!--</optgroup>-->
+                    </input>
                     <span></span>
                 </div>
 
                 <div class="col-md-4">
-                    <select type="select" name="modelName" -placeholder="Select Model" id="modelName" required="">
-                        <optgroup label="Apple">
-                            <option value="">Select Model</option>
-                            <option value="Iphone5">Iphone5</option>
-                            <option value="IphoneX">IphoneX</option>
-                        </optgroup>
-                    </select>
+                    <input type="text" name="modelName" -placeholder="Select Model" id="modelName" required="">
+                    <label>Model Number</label>
+                        <!--<optgroup label="Apple">-->
+                            <!--<option value="">Select Model</option>-->
+                            <!--<option value="Iphone5">Iphone5</option>-->
+                            <!--<option value="IphoneX">IphoneX</option>-->
+                        <!--</optgroup>-->
+
                     <span></span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <select type="select" name="manufacturingYear" id="manufacturingYear" required="">
-                        <optgroup label="Manufacturer Year">
-                            <option value="0">Manufacturer Year</option>
-                            <option value="2012">2012</option>
-                            <option value="2013">2013</option>
-                            <option value="2014">2014</option>
-                            <option value="2015">2015</option>
-                        </optgroup>
+                    <input type="number" name="manufacturingYear" id="manufacturingYear" required="">
+                    <label>Manufacturing Year</label>
+                        <!--<optgroup label="Manufacturer Year">-->
+                            <!--<option value="0">Manufacturer Year</option>-->
+                            <!--<option value="2012">2012</option>-->
+                            <!--<option value="2013">2013</option>-->
+                            <!--<option value="2014">2014</option>-->
+                            <!--<option value="2015">2015</option>-->
+                        <!--</optgroup>-->
                         <span></span>
-                    </select>
-                </div>
 
-                <div class="col-md-3">
-                    <select type="select" name="usedDuration" id="usedDuration" required="">
-                        <optgroup label="Used Years">
-                            <option value="0">Duration</option>
-                            <option value="0-1">0 - 1</option>
-                            <option value="1-2">1 - 2</option>
-                            <option value="2-3">2 - 3</option>
-                            <option value="3+">3+</option>
-                        </optgroup>
+                </div>
+                <div class="col-md-4">
+                    <input type="number" name="usedDuration" id="usedDuration" required="">
+                    <label>Used Duration</label>
+                        <!--<optgroup label="Manufacturer Year">-->
+                            <!--<option value="0">Manufacturer Year</option>-->
+                            <!--<option value="2012">2012</option>-->
+                            <!--<option value="2013">2013</option>-->
+                            <!--<option value="2014">2014</option>-->
+                            <!--<option value="2015">2015</option>-->
+                        <!--</optgroup>-->
                         <span></span>
-                    </select>
+
                 </div>
             </div>
-
             <div class="styled-input">
                 <input type="submit" value="Submit">
             </div>

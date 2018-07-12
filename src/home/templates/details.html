@@ -159,12 +159,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!--<input type="hidden" name="is_valid" value="True" class="button">-->
                 <!--<div>-->
             <div class="row">
-                    <form class="col-md-2" action="/update/{{p.slug}}">
+                    <form class="col-md-2" action="/update/{{part.slug}}">
                         {% csrf_token %}
                         <input type="submit" name="edit" value="Edit" class="button">
                     </form>
 
-                    <form class="col-md-2" action="/delete/{{p.id}}/" style="margin-left: 30px;" method="post" class="button">
+                    <form class="col-md-2" action="/delete/{{part.id}}/" style="margin-left: 30px;" method="post" class="button">
+                        {% csrf_token %}
                         <input type="submit" name="delete" value="Delete" class="button">
                     </form>
             </div>
