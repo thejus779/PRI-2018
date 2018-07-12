@@ -82,3 +82,8 @@ class UpdateUpForm(UserCreationForm):
     class Meta:
         model = User
         fields = ('fullname', 'address', 'city', 'postalcode', 'country', 'mobilenumber','email','username')
+
+
+class passwordForm(UserCreationForm):
+
+    password = forms.CharField(widget=forms.PasswordInput, required=True)

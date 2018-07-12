@@ -7,12 +7,12 @@ from .models import Profile
 from django.core.urlresolvers import reverse
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import TemplateView,ListView,DetailView, CreateView
-
+from django.contrib.auth.hashers import make_password
 from django.shortcuts import render, redirect
 from django.conf import settings
 from django.db import transaction
 from .utils import unique_slug_generator
-from .forms import LoginForm, SignUpForm, UpdateUpForm,User
+from .forms import LoginForm, SignUpForm, UpdateUpForm,User,passwordForm
 from .models import Profile
 from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
@@ -68,7 +68,7 @@ def signup(request):
             )
             email.send()
             messages.success(request, 'Please verify your email')
-            return HttpResponseRedirect('login')
+            return HttpResponseRedirect(request.path_info)
             # username = form.cleaned_data.get('username')
             # raw_password = form.cleaned_data.get('password1')
             # user = authenticate(username=username, password=raw_password)
@@ -153,6 +153,7 @@ def update_profile(request):
 
             return redirect('profile')
         else:
+            print(user_form.errors)
             # messages.error(request, 'Please correct the error below.')
             return render(request, 'editProfile.html', {'form':user_form})
 
@@ -266,7 +267,7 @@ def activate(request, uidb64, token):
         user.save()
         login(request, user)
         # return redirect('home')
-        return HttpResponseRedirect('activated')
+        return redirect('activated')
     else:
         return HttpResponse('Activation link is invalid!')
 
@@ -297,3 +298,18 @@ def change_password(request):
     return render(request, 'change_password.html', {
         'form': form, 'errors': errors
     })
+
+def reset_pwd(request, uidb64, token):
+    try:
+        uid = force_text(urlsafe_base64_decode(uidb64))
+        user = User.objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, User.DoesNotExist):
+        user = None
+    if user is not None and account_activation_token.check_token(user, token):
+        if passwordForm.is_valid():
+            password = passwordForm.cleaned_data['password']
+            request.user.password = make_password(password)
+            request.user.save()
+        return redirect('home')
+    else:
+        return HttpResponse('Failed')

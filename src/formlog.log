@@ -5314,3 +5314,121 @@ DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spa
 WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
 WARNING:django.request:Not Found: /register_post/assets/img/payment.png
 WARNING:django.request:Not Found: /password/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts609 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /filter/assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /no_search_result/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /notifications/assets/img/payment.png
+WARNING:django.request:Not Found: /reply/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /signup/assets/img/payment.png
+WARNING:django.request:Not Found: /signup/assets/img/payment.png
+WARNING:django.request:Not Found: /activated/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+DEBUG:root:form=<tr><th><label for="id_category">Category:</label></th><td><select name="category" id="id_category">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_make">Make:</label></th><td><select name="make" id="id_make">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_country">Country:</label></th><td><select name="country" id="id_country">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturer">Manufacturer:</label></th><td><select name="manufacturer" id="id_manufacturer">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_manufacturerYear">ManufacturerYear:</label></th><td><input type="range" name="manufacturerYear" step="1" max="10" min="1" value="5" oninput="yearOutput.value=this.value" id="id_manufacturerYear" /></td></tr>
+<tr><th><label for="id_city">City:</label></th><td><select name="city" id="id_city">
+  <option value="" selected>---------</option>
+
+</select></td></tr>
+<tr><th><label for="id_zipCode">ZipCode:</label></th><td><input type="range" name="zipCode" step="1" max="10" min="1" value="5" oninput="zipOutput.value=this.value" id="id_zipCode" /></td></tr>
+<tr><th><label for="id_usedDuration">UsedDuration:</label></th><td><input type="range" name="usedDuration" step="1" max="10" min="1" value="5" oninput="usedDOutput.value=this.value" id="id_usedDuration" /></td></tr>
+DEBUG:root:form is valid
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "POST /retrieval?casebase=spare&concept%20name=Spareparts&amalgamation%20function=default%20function HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8080
+DEBUG:urllib3.connectionpool:http://localhost:8080 "GET //case?caseID=Spareparts609 HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /search_results/assets/img/payment.png
+WARNING:django.request:Not Found: /part/pressure-cooker/assets/img/payment.png
+WARNING:django.request:Not Found: /contact/assets/img/payment.png
+WARNING:django.request:Not Found: /about/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /signup/assets/img/payment.png
+WARNING:django.request:Not Found: /about/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /login/assets/img/payment.png
+WARNING:django.request:Not Found: /assets/img/payment.png
+WARNING:django.request:Not Found: /post/assets/img/payment.png

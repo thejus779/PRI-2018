@@ -49,7 +49,7 @@ from core.views import (
     MyLoginView,
     activate,
     change_password,
-
+    reset_pwd,
     # display_profile,
     # DisplayProfile,
 )
@@ -101,6 +101,9 @@ urlpatterns = [
     url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
         auth_views.password_reset_confirm, name='password_reset_confirm'),
     url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'),
+    url(r'^reset_pwd/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
+        activate, name='reset_pwd'),
+
     # url(r'^media/(?P<path>.*)$', serve, {
         # 'document_root': settings.MEDIA_ROOT}),
 ]

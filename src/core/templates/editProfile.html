@@ -96,13 +96,9 @@
                             <span></span>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <input type="text" name="username" value="{{ request.user.username}}" required="">
-                            <label>Full Name</label>
-                            <span></span>
-                        </div>
-                    </div>
+
+                    <input type="hidden" name="username" value="{{ request.user.username}}" required="">
+
 
                     <div class="row">
                         <div class="col-md-6">
