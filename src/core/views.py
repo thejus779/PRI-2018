@@ -25,7 +25,8 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.template.loader import render_to_string
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
-
+from django.contrib.auth import update_session_auth_hash
+from django.contrib.auth.forms import PasswordChangeForm
 
 from django.views.generic import View
 
@@ -265,6 +266,34 @@ def activate(request, uidb64, token):
         user.save()
         login(request, user)
         # return redirect('home')
-        return HttpResponse('Thank you for your email confirmation. Now you can login your account.')
+        return HttpResponseRedirect('activated')
     else:
         return HttpResponse('Activation link is invalid!')
+
+
+def change_password(request):
+    errors = None
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)  # Important!
+            messages.success(request, 'Your password was successfully updated!')
+            subject = 'Password Changed'
+
+            body = 'Your password has been changed recently. If it was not you please contact us.'
+
+            email = EmailMessage(subject, body, to=[request.user.email])
+            email.send()
+            return redirect('change_password')
+        else:
+            errors = form.errors
+            return render(request, 'change_password.html', {
+                'form': form, 'errors': errors
+            })
+    else:
+        form = PasswordChangeForm(request.user)
+    return render(request, 'change_password.html', {
+        'form': form, 'errors': errors
+    })

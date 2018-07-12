@@ -49,7 +49,7 @@ def reply_select(request, id):
                     notif.save()
                     part.save()
                     print('success save valid')
-                    messages.success(request, 'Request created successfully')
+                    messages.success(request, 'Request accepted')
                     return redirect('home')
             if form.errors:
                 errors = form.errors
@@ -69,7 +69,7 @@ def reply_select(request, id):
 
     else:
         notif = Notification.objects.get(id=id)
-        parts = Parts.objects.filter(owner=User.objects.get(id=notif.buyer_id))
+        parts = Parts.objects.filter(owner=User.objects.get(id=notif.buyer_id)).filter(is_available='True')
         context = {'parts': parts,'notif':notif}
 
     return render(request, template_name, context)

@@ -115,6 +115,7 @@ def display_buy_part(request,slug):
                     # file = form.cleaned_data['image']
                     # post save
                     print("INSIDE FORM")
+                    messages.success(request, 'Exchange request sent successfully')
                     return redirect('home')
             if form.errors:
                 print("ERROR  IS ")

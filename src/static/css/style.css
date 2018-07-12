@@ -1983,7 +1983,7 @@ style.css
 
     .men-thumb-item1 {
         position: relative;
-        height: 20px;
+        height: 200px;
     }
     .item-info-product {
         text-align: center;
@@ -4872,7 +4872,7 @@ style.css
         }
         .header-middle form input[type="submit"] {
             background: url(../images/search.png) no-repeat 4px 0px #2fdab8;
-            width: 17%;
+            width: 100%;
             margin-left: 20px;
         }
         .w3layouts_mail_grid_left {
@@ -5319,7 +5319,6 @@ style.css
         }
         .logo_agile {
             text-align: left;
-            margin-top: 1em;
             padding: 0;
             float: left;
         }

@@ -1,9 +1,13 @@
 <!--Footer-->
+    {% load staticfiles %}
     <div class="footer">
         <div class="footer_agile_inner_info_w3l">
             <div class="col-md-3 footer-left">
-                <h2><a href="/">LOGO</a></h2>
-                <p>Team X-Spare welcomes you to our platform!. Exchange Re-use Sustain</p>
+                <h2>
+                    <a href="/"><img src="{% static 'img/Logo.png' %}" style="width: 200px;"></a>
+                </h2>
+                <p>A platform for exchange of spare parts between those who have and those who need them - for cars, home equipment, computers, bikes and other electronics etc., by implementing direct association of offer (people offering spare pieces) and
+                    demand (people looking for spare pieces).</p>
                 <ul class="social-nav model-3d-0 footer-social w3_agile_social two">
                     <li>
                         <a href="https://www.facebook.com/Xspare/?modal=admin_todo_tour" class="facebook">
