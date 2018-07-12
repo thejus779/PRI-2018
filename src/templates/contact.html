@@ -6,7 +6,7 @@
     <!--/tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -15,46 +15,50 @@
         function hideURLbar() {
             window.scrollTo(0, 1);
         }
+
     </script>
     <!--//tags -->
     {% load staticfiles %}
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
     <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
-    <link href="{% static 'css/easy-responsive-tabs.css' %}" rel='stylesheet' type='text/css' />
+    <link href="{% static 'css/easy-responsive-tabs.css' %}" rel='stylesheet' type='text/css'/>
     <!-- //for bootstrap working -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
-    <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'
+          rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <!-- header-bot -->
-    {% include 'snippets/header-bot.html' %}
-    <!-- //header-bot -->
-    <!-- banner -->
-    <div class="ban-top">
-        <div class="container">
-            <div class="top_nav_left">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav menu__list">
-                                <li class=" menu__item"><a class="menu__link" href="/">Home</a></li>
+<!-- header-bot -->
+{% include 'snippets/header-bot.html' %}
+<!-- //header-bot -->
+<!-- banner -->
+<div class="ban-top">
+    <div class="container">
+        <div class="top_nav_left">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav menu__list">
+                            <li class=" menu__item"><a class="menu__link" href="/">Home</a></li>
 
-                                <li class=" menu__item"><a class="menu__link" href="/post/">Post An Item</a></li>
-                                <li class=" menu__item"><a class="menu__link" href="/about/">About</a></li>
-                                <li class=" active menu__item menu__item--current"><a class="menu__link" href="/contact/">Contact<span class="sr-only">(current)</span></a></li>
-                                {% if request.user.is_authenticated %}
+                            <li class=" menu__item"><a class="menu__link" href="/post/">Post An Item</a></li>
+                            <li class=" menu__item"><a class="menu__link" href="/about/">About</a></li>
+                            <li class=" active menu__item menu__item--current"><a class="menu__link" href="/contact/">Contact<span
+                                    class="sr-only">(current)</span></a></li>
+                            {% if request.user.is_authenticated %}
                             <li class="menu__item">
                                 <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown"><i
                                         class="fa fa-user" aria-hidden="true"></i> Account <b class="caret"></b></a>
@@ -71,134 +75,169 @@
                             <li class=" manu__item"><a class="menu__link" href="/signup/"><i
                                     class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
                             {% endif %}
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-                </nav>
+                </div>
+            </nav>
+        </div>
+        {% include 'snippets/notificationheader.html' %}
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+<!-- //banner-top -->
+<!-- /banner_bottom_agile_info -->
+<div class="page-head_agile_info_w3l">
+    <div class="container">
+        <h3>Contact<span> Us </span></h3>
+        <!--/w3_short-->
+
+        <!--//w3_short-->
+    </div>
+</div>
+<!--/contact-->
+<div class="banner_bottom_agile_info">
+    <div class="container">
+
+        {% if messages %}
+
+        {% for message in messages %}
+        <!--<div class="modal fade in messages" id="myModal" tabindex="-1" role="dialog" aria-hidden="false" style="display: none; modal: true;">-->
+        <div class="modal-dialog" style="height: 500px; padding-top:10em">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" {% if message.tags %} class="{{ message.tags }}">{% endif %}
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body modal-body-sub_agile">
+                    <div class="col-md-8 modal_body_left modal_body_left1">
+                        <h3>{{ message }}</h3>
+                        <form action="/contact/" method="post">{% csrf_token %}
+                            <input type="submit" value="OK">
+                        </form>
+
+                        <div class="clearfix"></div>
+
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
             </div>
-            {% include 'snippets/notificationheader.html' %}
+            <!-- //Modal content-->
+        </div>
+        <!--</div>-->
+        {% endfor %}
+        {% else %}
+
+        <div class="contact-grid-agile-w3s">
+            <div class="col-md-4 contact-grid-agile-w3">
+                <div class="contact-grid-agile-w31">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h4>Address</h4>
+                    <p>17 Avenue De La Republique <span>Choisy Le Roi, FR.</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 contact-grid-agile-w3">
+                <div class="contact-grid-agile-w32">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h4>Call Us</h4>
+                    <p>+33 668 606 974<span>+33 668 606 974</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 contact-grid-agile-w3">
+                <div class="contact-grid-agile-w33">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <h4>Email</h4>
+                    <p><a href="mailto:advancedphp779@gmail.com">advancedphp779@gmail.com</a><span><a
+                            href="mailto:thejus.manoharan@gmail.com">thejus.manoharan@gmail.com</a></span></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<div class="contact-w3-agile1 map" data-aos="flip-right">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.892513214952!2d2.406251037162411!3d48.76050886540005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e674894010565d%3A0x2a0ae501d83c0811!2s17+Avenue+de+la+R%C3%A9publique%2C+94600+Choisy-le-Roi!5e0!3m2!1sen!2sfr!4v1531337692831"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="banner_bottom_agile_info">
+    <div class="container">
+        <div class="agile-contact-grids">
+            <div class="agile-contact-left">
+                <div class="col-md-6 address-grid">
+                    <h4>For More <span>Information</span></h4>
+                    <div class="mail-agileits-w3layouts">
+                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                        <div class="contact-right">
+                            <p>Telephone </p><span>+33 668 606 974</span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="mail-agileits-w3layouts">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <div class="contact-right">
+                            <p>Mail </p><a href="mailto:advancedphp779@gmail.com">advancedphp779@gmail.com</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="mail-agileits-w3layouts">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <div class="contact-right">
+                            <p>Location</p><span>17 Avenue de la Republique , Choisy Le Roi, FR.</span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 contact-form">
+                    <h4 class="white-w3ls">Contact <span>Form</span></h4>
+                    <form action="#" method="post">{% csrf_token %}
+                        <div class="styled-input agile-styled-input-top">
+                            <input type="text" name="name" required="">
+                            <label>Name</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="email" name="email" required="">
+                            <label>Email</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="text" name="subject" required="">
+                            <label>Subject</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <textarea name="message" required=""></textarea>
+                            <label>Message</label>
+                            <span></span>
+                        </div>
+                        <input type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
             <div class="clearfix"></div>
         </div>
     </div>
-
-
-    <!-- //banner-top -->
-    <!-- /banner_bottom_agile_info -->
-    <div class="page-head_agile_info_w3l">
-        <div class="container">
-            <h3>Contact<span> Us </span></h3>
-            <!--/w3_short-->
-
-            <!--//w3_short-->
-        </div>
-    </div>
-    <!--/contact-->
-    <div class="banner_bottom_agile_info">
-        <div class="container">
-            <div class="contact-grid-agile-w3s">
-                <div class="col-md-4 contact-grid-agile-w3">
-                    <div class="contact-grid-agile-w31">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <h4>Address</h4>
-                        <p>17 Avenue De La Republique <span>Choisy Le Roi, FR.</span></p>
-                    </div>
-                </div>
-                <div class="col-md-4 contact-grid-agile-w3">
-                    <div class="contact-grid-agile-w32">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <h4>Call Us</h4>
-                        <p>+33 668 606 974<span>+33 668 606 974</span></p>
-                    </div>
-                </div>
-                <div class="col-md-4 contact-grid-agile-w3">
-                    <div class="contact-grid-agile-w33">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <h4>Email</h4>
-                        <p><a href="mailto:advancedphp779@gmail.com">advancedphp779@gmail.com</a><span><a href="mailto:thejus.manoharan@gmail.com">thejus.manoharan@gmail.com</a></span></p>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
-    <div class="contact-w3-agile1 map" data-aos="flip-right">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.892513214952!2d2.406251037162411!3d48.76050886540005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e674894010565d%3A0x2a0ae501d83c0811!2s17+Avenue+de+la+R%C3%A9publique%2C+94600+Choisy-le-Roi!5e0!3m2!1sen!2sfr!4v1531337692831" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="banner_bottom_agile_info">
-        <div class="container">
-            <div class="agile-contact-grids">
-                <div class="agile-contact-left">
-                    <div class="col-md-6 address-grid">
-                        <h4>For More <span>Information</span></h4>
-                        <div class="mail-agileits-w3layouts">
-                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                            <div class="contact-right">
-                                <p>Telephone </p><span>+33 668 606 974</span>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
-                        <div class="mail-agileits-w3layouts">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <div class="contact-right">
-                                <p>Mail </p><a href="mailto:advancedphp779@gmail.com">advancedphp779@gmail.com</a>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
-                        <div class="mail-agileits-w3layouts">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <div class="contact-right">
-                                <p>Location</p><span>17 Avenue de la Republique , Choisy Le Roi, FR.</span>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6 contact-form">
-                        <h4 class="white-w3ls">Contact <span>Form</span></h4>
-                        <form action="#" method="post">
-                            <div class="styled-input agile-styled-input-top">
-                                <input type="text" name="Name" required="">
-                                <label>Name</label>
-                                <span></span>
-                            </div>
-                            <div class="styled-input">
-                                <input type="email" name="Email" required="">
-                                <label>Email</label>
-                                <span></span>
-                            </div>
-                            <div class="styled-input">
-                                <input type="text" name="Subject" required="">
-                                <label>Subject</label>
-                                <span></span>
-                            </div>
-                            <div class="styled-input">
-                                <textarea name="Message" required=""></textarea>
-                                <label>Message</label>
-                                <span></span>
-                            </div>
-                            <input type="submit" value="SEND">
-                        </form>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
-    <!--//contact-->
-
+</div>
+<!--//contact-->
 
 
 <!-- Footer snippet -->
 {% include 'snippets/footer.html' %}
 <!-- //login -->
-    <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-    <!-- js -->
-    <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
-    <!-- //js -->
-    <!-- cart-js -->
-    <script src="{% static 'js/minicart.min.js' %}"></script>
-    <script>
+<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover"
+                                                                         style="opacity: 1;"> </span></a>
+<!-- js -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<!-- cart-js -->
+<script src="{% static 'js/minicart.min.js' %}"></script>
+<script>
         // Mini Cart
         paypal.minicart.render({
             action: '#'
@@ -207,21 +246,23 @@
         if (~window.location.search.indexOf('reset=true')) {
             paypal.minicart.reset();
         }
-    </script>
 
-    <!-- //cart-js -->
+</script>
 
-    <!-- stats -->
-    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'js/jquery.countup.js' %}"></script>
-    <script>
+<!-- //cart-js -->
+
+<!-- stats -->
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.countup.js' %}"></script>
+<script>
         $('.counter').countUp();
-    </script>
-    <!-- //stats -->
-    <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery.easing.min.js' %}"></script>
-    <script type="text/javascript">
+
+</script>
+<!-- //stats -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.easing.min.js' %}"></script>
+<script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
                 event.preventDefault();
@@ -230,9 +271,10 @@
                 }, 1000);
             });
         });
-    </script>
-    <!-- here stars scrolling icon -->
-    <script type="text/javascript">
+
+</script>
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
         $(document).ready(function() {
             /*
             	var defaults = {
@@ -248,12 +290,13 @@
             });
 
         });
-    </script>
-    <!-- //here ends scrolling icon -->
 
-    <!-- for bootstrap working -->
-    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
-    <script>
+</script>
+<!-- //here ends scrolling icon -->
+
+<!-- for bootstrap working -->
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+<script>
         // Initialize and add the map
         function initMap() {
           // The location of Uluru
@@ -264,10 +307,11 @@
           // The marker, positioned at Uluru
           var marker = new google.maps.Marker({position: uluru, map: map});
         }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOwBFBNPOwzFQHYRXvdxAt8qd0fpvy3wo&callback=initMap">
-    </script>
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOwBFBNPOwzFQHYRXvdxAt8qd0fpvy3wo&callback=initMap">
+</script>
 </body>
 
 </html>

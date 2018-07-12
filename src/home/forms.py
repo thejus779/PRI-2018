@@ -1,6 +1,6 @@
 from django import forms
 from .models import Image
-from .models import Parts, PartsRequest
+from .models import Parts, PartsRequest, Contact
 from .models import Query
 from django.forms.widgets import NumberInput
 # from .validators import validate_category
@@ -20,6 +20,7 @@ class PostPartCreateForm(forms.ModelForm):
             'description',
             'images',
         ]
+
 class PartRequestCreateForm(forms.ModelForm):
 
     class Meta:
@@ -31,6 +32,17 @@ class PartRequestCreateForm(forms.ModelForm):
             'modelName',
             'manufacturingYear',
             'usedDuration',
+        ]
+
+class ContactCreateForm(forms.ModelForm):
+
+    class Meta:
+        model = Contact
+        fields = [
+            'name',
+            'email',
+            'subject',
+            'message',
         ]
 
 class ImageForm(forms.ModelForm):

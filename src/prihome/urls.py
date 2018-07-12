@@ -34,6 +34,7 @@ from home.views import (
     search_results,
     no_search_section,
     register_post,
+    create_contact,
 
 
 
@@ -74,7 +75,7 @@ urlpatterns = [
     url(r'^$', get_all_products, name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='about.html')),
     url(r'^post/$', create_parts,name='post'),
-    url(r'^contact/$', TemplateView.as_view(template_name='contact.html')),
+    url(r'^contact/$', create_contact,name='contact'),
     url(r'^details/$', TemplateView.as_view(template_name='details.html')),
     url(r'^posted/$', user_parts,name='posted'),
     url(r'^edit/$', update_profile),

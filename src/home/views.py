@@ -10,7 +10,7 @@ import json
 import requests
 from .models import Image
 from .forms import ImageForm
-from .forms import PostPartCreateForm, QueryCaseBaseForm,PartRequestCreateForm
+from .forms import PostPartCreateForm, QueryCaseBaseForm,PartRequestCreateForm, ContactCreateForm
 from .models import Parts
 from django.shortcuts import render, redirect
 from notif.forms import BuyRequest
@@ -357,6 +357,34 @@ def register_post(request):
 
     else:
         template_name = 'request_post.html'
+        context = {
+                   }
+
+        return render(request, template_name, context)
+
+
+def create_contact(request):
+    if request.method == 'POST':
+        form = ContactCreateForm(request.POST, request.FILES)
+        errors = None
+        print(form)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.save()
+            messages.success(request, 'Message sent successfully')
+            return redirect('contact')
+
+        if form.errors:
+            errors = form.errors
+
+        template_name = 'contact.html'
+        context = {"form": form, "errors": errors
+                   }
+
+        return render(request, template_name, context)
+
+    else:
+        template_name = 'contact.html'
         context = {
                    }
 

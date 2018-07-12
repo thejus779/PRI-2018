@@ -209,3 +209,20 @@ class Query (models.Model):
 
     def __str__(self):
         return self.category + ':' + str (self.pk)
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=30, blank=True, help_text='Name of your user')
+    email = models.CharField(max_length=120, null=True, blank=True,help_text='Email address')
+    subject = models.CharField(max_length=30, blank=True, help_text='Subject of contact')
+    message = models.CharField(max_length=3000, blank=True, help_text='Description Of the problem')
+
+
+    def __str__(self):
+        return self.name
+    @property
+    def title(self):
+        return self.name #objectect.title
+    class Meta:
+        verbose_name = 'Contact'
+        verbose_name_plural = 'Contacts'
